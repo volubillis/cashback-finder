@@ -33,7 +33,7 @@
     <h1>Trouveur Cashback</h1>
   </header>
 
-  <input type="text" id="searchInput" class="search-box" placeholder="Rechercher une enseigne, un produit (Monoprix, sport, matelas...)...">
+  <input type="text" id="searchInput" class="search-box" placeholder="Rechercher une enseigne, un produit...">
 
   <div class="filter-group">
     <button class="filter-btn active" id="btnRP" onclick="toggleFilter('RP')">Réductions Privées (20%)</button>
@@ -41,7 +41,7 @@
   </div>
 
   <div class="meta-bar">
-    <span id="counter">Chargement de la base complète...</span>
+    <span id="counter">Chargement des données...</span>
   </div>
 
   <div id="merchantList" class="merchant-list"></div>
@@ -51,10 +51,7 @@
     let activeRP = true;
     let activeRR = true;
 
-    // URL directe vers la base consolidée complète hébergée
-    const DATA_URL = "https://raw.githubusercontent.com/volubillis/cashback-finder/main/merchants.json";
-
-    fetch(DATA_URL)
+    fetch('./merchants.json')
       .then(res => {
         if (!res.ok) throw new Error("Fichier introuvable");
         return res.json();
@@ -64,8 +61,7 @@
         render();
       })
       .catch(err => {
-        // Secours si le fichier distant n'est pas encore synchronisé
-        document.getElementById('counter').textContent = "Erreur de chargement. Vérifiez que merchants.json est bien présent sur GitHub.";
+        document.getElementById('counter').textContent = "Erreur : le fichier merchants.json est vide ou mal formaté.";
       });
 
     function toggleFilter(type) {
