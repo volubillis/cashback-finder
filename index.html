@@ -2,26 +2,118 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cashback Finder</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: #f4f6f8; color: #222; padding: 16px; max-width: 650px; margin: 0 auto; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    body { background-color: #f4f6f8; color: #222; padding: 16px; max-width: 600px; margin: 0 auto; }
     header { text-align: center; margin-bottom: 16px; }
-    h1 { font-size: 1.35rem; color: #111; margin-bottom: 4px; }
-    p.subtitle { font-size: 0.85rem; color: #666; }
-    
-    .search-box { width: 100%; padding: 12px 14px; font-size: 1rem; border: 1px solid #ccc; border-radius: 10px; outline: none; margin-bottom: 12px; background: #fff; }
-    .search-box:focus { border-color: #0070f3; }
-
-    .filter-group { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-    .filter-btn { flex: 1; min-width: 140px; padding: 8px 10px; border-radius: 8px; border: 1px solid #ccc; background: #fff; font-size: 0.85rem; font-weight: 500; cursor: pointer; text-align: center; }
+    h1 { font-size: 1.3rem; margin-bottom: 6px; }
+    .search-box { width: 100%; padding: 12px; font-size: 1rem; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 12px; }
+    .filter-group { display: flex; gap: 8px; margin-bottom: 16px; }
+    .filter-btn { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; font-weight: bold; }
     .filter-btn.active { background: #0070f3; color: #fff; border-color: #0070f3; }
-
-    .meta-bar { font-size: 0.85rem; color: #555; margin-bottom: 10px; display: flex; justify-content: space-between; }
+    .meta-bar { font-size: 0.9rem; margin-bottom: 10px; color: #555; }
     .merchant-list { display: flex; flex-direction: column; gap: 8px; }
-    .merchant-card { background: #fff; border-radius: 10px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-    .merchant-info h3 { font-size: 0.95rem; margin-bottom: 4px; }
-    .tags { display: flex; gap: 4px; flex-wrap: wrap; }
-    .tag { font-size: 0.72rem; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
-    .tag-rp { background: #e0f2fe; color: #0284c
+    .merchant-card { background: #fff; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .merchant-info h3 { font-size: 1rem; margin-bottom: 4px; }
+    .tags { display: flex; gap: 6px; }
+    .tag { font-size: 0.75rem; padding: 3px 6px; border-radius: 4px; font-weight: 600; }
+    .tag-rp { background: #e0f2fe; color: #0284c7; }
+    .tag-rr { background: #fef3c7; color: #d97706; }
+    .link-btn { background: #0070f3; color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; }
+    .empty-state { text-align: center; color: #777; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trouveur Cashback</h1>
+  </header>
+
+  <input type="text" id="searchInput" class="search-box" placeholder="Chercher une enseigne ou un article...">
+
+  <div class="filter-group">
+    <button class="filter-btn active" id="btnRP" onclick="toggleFilter('RP')">Réductions Privées</button>
+    <button class="filter-btn active" id="btnRR" onclick="toggleFilter('RR')">Remises & Réductions</button>
+  </div>
+
+  <div class="meta-bar">
+    <span id="counter">0 marchand trouvé</span>
+  </div>
+
+  <div id="merchantList" class="merchant-list"></div>
+
+  <script>
+    const merchants = [
+      { name: "Adidas", cats: ["mode", "sport", "chaussures"], rp: true, rr: true },
+      { name: "Nike", cats: ["mode", "sport", "chaussures"], rp: true, rr: true },
+      { name: "Darty", cats: ["high-tech", "electromenager"], rp: true, rr: true },
+      { name: "Fnac", cats: ["high-tech", "livres", "culture"], rp: true, rr: true },
+      { name: "ManoMano", cats: ["bricolage", "jardin", "maison"], rp: true, rr: true },
+      { name: "Castorama", cats: ["bricolage", "jardin"], rp: false, rr: true },
+      { name: "Conforama", cats: ["meuble", "maison"], rp: false, rr: true },
+      { name: "Monoprix", cats: ["courses", "alimentation", "mode"], rp: true, rr: true },
+      { name: "Oscaro", cats: ["auto", "pieces"], rp: false, rr: true },
+      { name: "Norauto", cats: ["auto", "entretien"], rp: false, rr: true },
+      { name: "Sarenza", cats: ["chaussures", "mode"], rp: true, rr: true },
+      { name: "Puma", cats: ["sport", "mode"], rp: false, rr: true },
+      { name: "Zooplus", cats: ["animaux", "croquettes"], rp: true, rr: true }
+    ];
+
+    let activeRP = true;
+    let activeRR = true;
+
+    function toggleFilter(type) {
+      if (type === 'RP') {
+        activeRP = !activeRP;
+        document.getElementById('btnRP').classList.toggle('active', activeRP);
+      } else {
+        activeRR = !activeRR;
+        document.getElementById('btnRR').classList.toggle('active', activeRR);
+      }
+      render();
+    }
+
+    function render() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const list = document.getElementById('merchantList');
+      list.innerHTML = '';
+
+      const filtered = merchants.filter(m => {
+        const platformMatch = (activeRP && m.rp) || (activeRR && m.rr);
+        if (!platformMatch) return false;
+        if (!q) return true;
+        return m.name.toLowerCase().includes(q) || m.cats.some(c => c.toLowerCase().includes(q));
+      });
+
+      document.getElementById('counter').textContent = `${filtered.length} marchand(s) trouvé(s)`;
+
+      if (filtered.length === 0) {
+        list.innerHTML = '<div class="empty-state">Aucun résultat pour cette recherche.</div>';
+        return;
+      }
+
+      filtered.forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'merchant-card';
+        let tags = '';
+        if (m.rp) tags += '<span class="tag tag-rp">RP (20%)</span>';
+        if (m.rr) tags += '<span class="tag tag-rr">RR (15%)</span>';
+
+        div.innerHTML = `
+          <div class="merchant-info">
+            <h3>${m.name}</h3>
+            <div class="tags">${tags}</div>
+          </div>
+          <a class="link-btn" href="https://duckduckgo.com/?q=${encodeURIComponent(m.name + ' site officiel')}" target="_blank">Aller</a>
+        `;
+        list.appendChild(div);
+      });
+    }
+
+    document.getElementById('searchInput').addEventListener('input', render);
+    render();
+  </script>
+</body>
+</html>
