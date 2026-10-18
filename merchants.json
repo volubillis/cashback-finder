@@ -1,0 +1,4262 @@
+[
+  {
+    "name": "Adidas",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Nike",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "New Balance",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bershka",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Calzedonia",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Celio",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Etam",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kiabi",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Halle",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Sarenza",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Spartoo",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Stradivarius",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Undiz",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Levi's",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Puma",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Zara",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Zalando",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "3 Suisses",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "4 Elementos",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "About You",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Armor Lux",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Asos",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ba&sh",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Balaboosté",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bexley",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Billabong",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bimba Y Lola",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bocage",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bonobo Planet",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bonprix",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Café Coton",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Camper",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Caroll",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Champion",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Charles & Keith",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Chaussea",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Citadium",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Claires",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Claudie Pierlot",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cleor",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Converse",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Courir",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Crocs",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cupshe",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cyrillus",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "D Franklin",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Damart",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Daniel Wellington",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dare 2b",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Darienzo",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Desigual",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dockers",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dorina",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Drestige",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eberly",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eminence",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Emp",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Envie de Fraise",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eram",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Esdemarca",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Esprit",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Falke",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Festina",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fitflop",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Foot Locker",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Footpatrol",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Free People",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "G-Star",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gemo",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Geographical Norway",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Geox",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Guess",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "H&M",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Happy Socks",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Harlem Lifestyle",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hawkers",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Helline",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Histoire d'Or",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hoka One One",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hunkemoller",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hype Cult",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Isabel Marant",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Izac",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Izipizi",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jambissima",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jules",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jw Pei",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kappa",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kapten & Son",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Karl Lagerfeld",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kastner & Öhler",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kelton",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kickz",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lacoste",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lauvée",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lee",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lemon Curve",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Liu Jo",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lollipops",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lululemon",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maison 123",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maison FT",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Marc Orian",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Marks & Spencer",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Masaltos",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Merrell",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mimmu",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mina Storm",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Misciano Paris",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Moda Vilona",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Modz",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Molly Bracken",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Montagut",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "New Era Cap",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "NYDJ",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Oakley",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Octobre Editions",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Odlo",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Officine Générale",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ollygan",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "On Running",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Orchestra",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Outfittery",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Palladium",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Panafrica",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pandora",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Parade",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Patpat",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "PDPAOLA",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Petit Maxou",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Petite Mendigote",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Picture",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Polo Club",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "PrettyLittleThing",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pull & Bear",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Quiksilver",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Real Madrid Store",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Reebok",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rip Curl",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rossignol",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rue des Hommes",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Saaj Paris",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Salomon",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Sans Complexe",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Saucony",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Showroomprive",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Smallable",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Snipes",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Street One",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Tezenis",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Undiz",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Witt",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Zeina Alliances",
+    "cat": "Mode",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "1foDiscount",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Acer",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Akko",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "AliExpress",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Alloallo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Allpowers",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Arlo Security",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Asus",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Beatbot",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Blackview",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bluetti",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Boulanger",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bruneau",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cartouche du Toner",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cdiscount",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Conrad",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Crosscall",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cybertek",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dagoma",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Darty",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Delonghi",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Digixo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dreame",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dreo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Driffle",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dyson",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Easyflyer",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ebay",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "EcoFlow",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Electrolux",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Esr",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eufy",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Factorefurb",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fnac",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Galaxus",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Geekbuying",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Grosbill",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gsmnet",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Harman Kardon",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Honor",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Iegeek",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Infomaniak",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Inkclub",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Inmac Wstore",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Irobot",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jabra",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jackery",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "JBL",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Joom",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kenwood",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kiatoo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "KitchenAid",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kobo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kodak",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kymaxx",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Largo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lenovo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Li Time",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Livlab",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "MacWay",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maisonic",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "MDA Electroménager",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Memory PC",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mifcom",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Moo",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Moulinex",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Navee",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ninja Kitchen",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "NordVPN",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Objetrama",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Olympus",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Onlineprinters",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Onliz",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Otterbox",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Panasonic",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pandacola",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "PcComponentes",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Philips",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Phox",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pixartprinting",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pixmania",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Print24",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Printabout",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Recommerce",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rowenta",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Samsung",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Shark Clean",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Skil",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Sony",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Vevor",
+    "cat": "High Tech",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "1001 Pendules",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "4 Pieds",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "ABC Meubles",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "AC Deco",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Aesthetic Home",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Air and Me",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Alba Matelas",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Allotapis",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Alterego Design",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Aosom",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Araw",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Arred in Italy",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Atelier Bambou",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Babybjorn",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Baija",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Banak",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Batinea",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Becquet",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bemz",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bett1",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Boisreduc",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bosch",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Brasero Artisan",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Brico Dépôt",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bricoselect",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bultex",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Camif",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Castorama",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Centrale Brico",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Champion Direct",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Compactor Store",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Comptoir des Nuits",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Concept Usine",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Conforama",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Coreme",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Costway",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cosyneo",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Descamps",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Desktronic",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Deubaxxl",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Divani",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dormio",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Douce Lune",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Duux",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eibabo",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Electric Sun",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Elpumps",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Emma Matelas",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Enexopro",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Epeda",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Erverte Paris",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eurotops",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fackelmann",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fermob",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Flashventes",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Franchini Shop",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Françoise Saget",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fruugo",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gabiona",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gardena",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gerflor",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Geuther",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Habitat",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hailo",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Happy Garden",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hbm Machines",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Heimwerkertools",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hema",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Herman Miller",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hudson Reed",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hydrology",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hypnia",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Id Market",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "IKEA",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Instahouse",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Interiorlabels",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Joseph Joseph",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Juskys",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kadolis",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Karcher",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kare",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kenay",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kinderkraft",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Klast",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Knivesandtools",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Casa del Bebe",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Laurastar",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Layole",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Le Olive",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Le Roi de la Fenetre",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ledvance",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Les Cotons de Romane",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Les Lumieres du Temps",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Les Petits Citrons",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Levoit",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lidl",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lights4fun",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Linvosges",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Loberon",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ma Clé",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maeven Art",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maison Berger",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maisons du Monde",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "ManoMano",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Manutan",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Materfrance",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mathon",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Matt Sleeps",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Memorypur",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Miliboo",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mirlux",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mister Carpets",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Misterled",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mobili Fiver",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Momcozy",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mon Bento",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mondial Tissus",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mondoshopping",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Morpheabed",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mousse & Coussins",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Muji",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "My Jolie Candle",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mérinos",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Narwal",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Noukies",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Olara",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ooni",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Otovo",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Outiror",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Oviala",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ozmoz",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Papique",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Partylite",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pet and Garden",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Peter Nyssen",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Peugeot Saveurs",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Philips Hue",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pixel Corner",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pleine Lune",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Plum",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Porcelanosa",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pro Breeze",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Racetools",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ryobi",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "SodaStream",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Songmics",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Swissecoshop",
+    "cat": "Maison",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "123optic",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "27 Rosiers",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "3PPharma",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Adopt Parfum",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Adore Lenses",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ahead Nutrition",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Al Jazeera Perfumes",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Armani Beauty",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Asam Beauty",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Atida Santédiscount",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Banana Beauty",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Beauté Privée",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Biotyfull Box",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Biovea",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Body & Fit",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bulk",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "By Terry",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Charlotte Tilbury",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Christophe Robin",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Clarins",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cocooncenter",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Comptoir de L'Homme",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Daylily Paris",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Delihemp",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dermsilk",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Diamond Smile",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "DocMorris",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Donnerberg",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dr Pierre Ricaud",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dr Smile",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eafit",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ecco Verde",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Erborian",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Eric Favre",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Esn",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Firmoo",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fitadium",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Flaconi",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fleurance Nature",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Foreo",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Freshly Cosmetics",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ghd",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Glossybox",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Grand Optical",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hearing Direct",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Helena Rubinstein",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hyperice",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Iherb",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ioma",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jesenslebonheur",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kerastase",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kiko",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Korres",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "L'Atelier du Sourcil",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "L'Occitane",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "L'Oreal Paris",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Maison Valmont",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Roche Posay",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Laboratoires Biarritz",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Laboratoires Filorga",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lancôme",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lea Nature",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lenstore",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lentiamo",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Life Extension",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lookfantastic",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ma Louloute",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Madara",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mademoiselle Bio",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Magnifaik",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Malentille",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mama Kana",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Manucurist",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Marionnaud",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Medicross Labs",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Medik8",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Melvita",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Merci Handy",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mincidelice",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Miniweight",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "My Beauty Factory",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "MyProtein",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "MyVitamins",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "NARS",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Nat & Form",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Natura Brasil",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Nocibé",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Notino",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Nuxe",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Onebioshop",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Oral B",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Otticanet",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Oxyform",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Paranatura",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Parasantéonline",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Paula's Choice",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pazzox",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pediact",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pediakid",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Percko",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Performe",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Perfumes Club",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pin Up Secret",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Polaar",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Primor",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Propolia",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Revolution Beauty",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rituals",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Sephora",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Skean Beauty",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Stylevana",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "The Beauty Corner",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Yves Rocher",
+    "cat": "Beauté",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "1001 Hobbies",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "365 Rider",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "3DJake",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "4kidspoint",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Abebooks",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Adidas Padel",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Agfaphoto Print",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Aktive",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Alpiniste",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "AM Nutrition",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Audible",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Avenue des Jeux",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Babbel",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Basket Center",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Billetreduc",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Blizzard Gear Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cheerz",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Colorland",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Costumalia",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Cultura",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dazn France",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Decathlon",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Deguisetoi",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Detecteurs",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Difmark",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Direct Running",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Direct Volley",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Disney Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dogchef",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Draeger Paris",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Driffle",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Endurance Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Equilibre et Instinct",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Espace Golf",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "F1 Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fanatics",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fever",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Figurines Goodies",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fitness Boutique",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Foot Center",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Foot Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Footjoy",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "France Trampoline",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Franssen Loisirs",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Galop Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gameseal",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gamivo",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gear4music",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Glisshop",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Go Sport",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Goodbro",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Groupon",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Handball Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Horseven",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "House of Rugby",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "I-Run",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Janod",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Japhy",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Just Russel",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kinguin",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Puzzlerie",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Sellerie de Mae",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Le Géant des Beaux Arts",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lego",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lepape",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lunii",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ma Fabrik",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Manawa",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maverton",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maxi Zoo",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maxicours",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Micromania",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Morin",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Moyu",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Musculation",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "MyPoster",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Nature & Découvertes",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Nausicaa",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Oh Pacha",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Olight",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "On Fight",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Padel Nuestro",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Padel Point",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Palma Aquarium",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pandahall",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Parc Astérix",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Paris Saint-Germain Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pen Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pepette",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Petit Zèbre",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Photobox",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Photoweb",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pilotage Passion",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Pixum",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Planetfoot",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Play Bac Presse",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Popsa",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Printerpix",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Proform",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Puzzle You",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Real Madrid Store",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rossignol",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rougier & Plé",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rue de la Fête",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rue des Maquettes",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rue des Puzzles",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Salomon",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Schleich",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Smartphoto",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Speedo",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Suunto",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Tonton Outdoor",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Trek Expert",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Zooplus",
+    "cat": "Loisirs",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Abritel",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Agoda",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Air Caraïbes",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "American Tourister",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Avis",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Baage",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Belvilla",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Best Western",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Delsey Paris",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dfds",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Direct Ferries",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dotdrops",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Edreams",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Enjoy Travel",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Evancy",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Expedia",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Flixbus",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Free2move",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Frenchbee",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gites",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Goelia",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Goldcar",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gsell",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hertz",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Holiday Extras",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Holidu",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Hotels.com",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Iberia",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jumbo Car Guyane",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kiwicom",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lastminute",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Les Castels",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lufthansa",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Omio",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Opodo",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Parkvia",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "PO Ferries",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Quick Parking",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Rayon d'Or",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Saily",
+    "cat": "Voyages",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "123fleurs",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Abeille Heureuse",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Agour",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Aquarelle",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bene Bono",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bergamotte",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bienmanger.com",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Café Royal",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Carrefour",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Comtesse du Barry",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Dolce Gusto",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Domino's Pizza",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Famileat",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Famille Mary",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Fauchon",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Gerard Bertrand",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "HelloFresh",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Holy",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Houra",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Illy",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Interflora",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Jarmino",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Javry",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Kusmi Tea",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Lavazza",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Les Trésors d'Erable",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Monoprix",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "My American Shop",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Naturalia",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Outin",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Phenix",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Potager City",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Quai Sud",
+    "cat": "Cuisine & Alimentation",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "123pneus",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Autodoc",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Autodistribution",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Bip & Go",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Carpardoo",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Carplug",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Daparto",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Goodwheel",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Isinwheel",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "La Bécannerie",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Le Motard Bleu",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maxiscoot",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maxpeedingrods",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Maxxess",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Mister Auto",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Navee",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Norauto",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Oscaro",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Racechip",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  },
+  {
+    "name": "Ryobi",
+    "cat": "Auto & Moto",
+    "rp": true,
+    "rr": true
+  }
+]
