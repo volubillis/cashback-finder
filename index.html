@@ -46,18 +46,11 @@
 
   <div id="merchantList" class="merchant-list"></div>
 
-  <!-- Chargement des listes complètes -->
-  <script src="data1.js"></script>
-  <script src="data2.js"></script>
-  <script src="data3.js"></script>
+ <!-- Chargement du fichier unique -->
+  <script src="data.js"></script>
 
   <script>
-    const merchants = [
-      ...(window.merchantsPart1 || []),
-      ...(window.merchantsPart2 || []),
-      ...(window.merchantsPart3 || [])
-    ];
-
+    const merchants = window.allMerchants || [];
     let activeRP = true;
     let activeRR = true;
 
@@ -115,5 +108,3 @@
     document.getElementById('searchInput').addEventListener('input', render);
     render();
   </script>
-</body>
-</html>
