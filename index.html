@@ -33,7 +33,7 @@
     <h1>Trouveur Cashback</h1>
   </header>
 
-  <input type="text" id="searchInput" class="search-box" placeholder="Rechercher une enseigne, un produit...">
+  <input type="text" id="searchInput" class="search-box" placeholder="Rechercher une enseigne, produit (Monoprix, Suunto, matelas...)...">
 
   <div class="filter-group">
     <button class="filter-btn active" id="btnRP" onclick="toggleFilter('RP')">Réductions Privées (20%)</button>
@@ -41,28 +41,83 @@
   </div>
 
   <div class="meta-bar">
-    <span id="counter">Chargement des données...</span>
+    <span id="counter">Chargement...</span>
   </div>
 
   <div id="merchantList" class="merchant-list"></div>
 
   <script>
-    let merchants = [];
+    // Dictionnaire compact exhaustif des marchands
+    const dataGroups = [
+      {
+        cat: "Mode",
+        rpOnly: ["27 Rosiers", "Activshape", "Addict Sneakers", "About You", "André", "Bazarchic", "Bonobo Planet", "Celio", "Converse", "Dockers", "Etam", "Gemo", "Guess", "Happy Socks", "Isabel Marant", "Kiabi", "Kickz", "Lacoste", "Lemon Curve", "Maison 123", "Montagut", "Merrell", "Mina Storm", "Octobre Editions", "Ollygan", "Obsenza", "Panafrica", "Pandora", "Reebok", "Rip Curl", "Rue des Hommes", "Saaj Paris", "Sans Complexe", "Saucony", "Showroomprive", "Smallable", "Snipes", "Street One", "Tezenis"],
+        rrOnly: ["Abebooks", "Belenka", "Billabong", "Billybelt", "Bonprix", "Camper", "Crocs", "Cupshe", "Daniel Gerard", "Deporvillage", "Falke", "Fitflop", "Foot Locker", "Free People", "Geographical Norway", "Hey Dude", "Hom", "Kelton", "Lee", "Levi's", "Liu Jo", "Oakley", "Obi", "Officine Générale", "On Running", "Place des Tendances", "Polo Club", "Puma", "Quiksilver", "Witt", "Yves Rocher", "Zalando", "Zara"],
+        both: ["1001bijoux", "3 Suisses", "4 Elementos", "Adidas", "Anekke", "Atelier Goldner", "Athena", "Balaboosté", "Bexley", "Bimba Y Lola", "Calzedonia", "Caroll", "Charles & Keith", "Chaussea", "Citadium", "Cyrillus", "D Franklin", "Damart", "Daniel Wellington", "Dare 2b", "Darienzo", "Desigual", "Dorina", "Drestige", "Eliseetmoi", "Eminence", "Emp", "Eram", "Esdemarca", "Festina", "Harlem Lifestyle", "Hawkers", "Helline", "Histoire d'Or", "Hoka One One", "Hunkemoller", "Hype Cult", "Izac", "Izipizi", "Jambissima", "Jw Pei", "Kappa", "Kastner & Öhler", "Lauvée", "Lollipops", "Lululemon", "Made in Paradis", "Marc Orian", "Marks & Spencer", "Masaltos", "Mimmu", "Misciano Paris", "Moda Vilona", "Modz", "Molly Bracken", "New Balance", "New Era Cap", "Nike", "Orchestra", "Parade", "PDPAOLA", "Petite Mendigote", "Picture", "PrettyLittleThing", "Pull & Bear", "Sarenza", "Spartoo", "Stradivarius", "Undiz", "Zeina Alliances"]
+      },
+      {
+        cat: "High Tech",
+        rpOnly: ["Activastore", "Bruneau", "Boulanger", "Conrad", "Cybertek", "Dagoma", "Factorefurb", "Galaxus", "Grosbill", "Harman Kardon", "Infomaniak", "Jabra", "Largo", "MacWay", "Maisonic", "Memory PC", "Moulinex", "Ninja Kitchen", "Onlineprinters", "Onliz", "Philips", "Pixmania", "Recommerce", "Rowenta", "Samsung", "Sony"],
+        rrOnly: ["Afb", "AliExpress", "Anker", "Banggood", "Blackview", "Blitzhandel24", "Cdiscount", "Dreame", "Ebay", "Eibabo", "Esr", "Geekbuying", "Hbm Machines", "Jackery", "Kobo", "Ledvance", "Lego", "Lenovo", "NordVPN", "Otterbox", "Panasonic", "Philips Hue"],
+        both: ["1foDiscount", "Acer", "Akko", "Alloallo", "Allpowers", "Arlo Security", "Asus", "Beatbot", "Bluetti", "Cartouche du Toner", "Crosscall", "Delonghi", "Digixo", "Dreo", "Driffle", "Dyson", "Easyflyer", "EcoFlow", "Electrolux", "Eufy", "Fnac", "Gsmnet", "Honor", "Iegeek", "Inmac Wstore", "JBL", "Joom", "Kenwood", "Kiatoo", "KitchenAid", "Kodak", "Kymaxx", "Li Time", "Livlab", "MDA Electroménager", "Mifcom", "Moo", "Navee", "Objetrama", "PcComponentes", "Phox", "Pixartprinting", "Print24", "Printabout", "Ryobi", "Vevor"]
+      },
+      {
+        cat: "Maison",
+        rpOnly: ["4 Pieds", "ABC Meubles", "AC Deco", "Aesthetic Home", "Alpiniste", "Aquarelle", "Becquet", "Camif", "Coreme", "Descamps", "Desktronic", "Douce Lune", "Eberly", "Eurotops", "Fermob", "Habitat", "Id Market", "IKEA", "Joseph Joseph", "Kadolis", "Kare", "Knivesandtools", "Mathon", "Mister Carpets", "Misterled", "Mondial Tissus", "Morpheabed", "Mousse & Coussins", "Muji", "My Jolie Candle", "Mérinos", "Partylite", "Peter Nyssen", "Pleine Lune", "Plum", "Porcelanosa", "Racetools", "Shark Clean", "Sihoo", "Skil", "SodaStream", "Songmics", "Swissecoshop"],
+        rrOnly: ["24bottles", "Action Antinuisible", "Akuwood Panel", "Ambientedirect", "Belvilla", "Bimago", "Brico Dépôt", "Castorama", "Conforama", "Divani", "Dormio", "Herman Miller", "Hudson Reed", "Linvosges", "Papique"],
+        both: ["1001 Pendules", "Air and Me", "Alba Matelas", "Allotapis", "Alterego Design", "Aosom", "Araw", "Arred in Italy", "Atelier Bambou", "Babybjorn", "Baija", "Banak", "Batinea", "Bemz", "Bett1", "Boisreduc", "Bosch", "Brasero Artisan", "Bricoselect", "Bultex", "Centrale Brico", "Champion Direct", "Compactor Store", "Comptoir des Nuits", "Concept Usine", "Costway", "Cosyneo", "Deubaxxl", "Dryly", "Duux", "Electric Sun", "Elpumps", "Emma Matelas", "Enexopro", "Epeda", "Erverte Paris", "Fackelmann", "Flashventes", "Franchini Shop", "Françoise Saget", "Gabiona", "Gardena", "Gerflor", "Geuther", "Hailo", "Happy Garden", "Heimwerkertools", "Hema", "Hydrology", "Hypnia", "Instahouse", "Interiorlabels", "Juskys", "Karcher", "Kenay", "Kinderkraft", "Klast", "La Casa del Bebe", "Laurastar", "Layole", "Le Olive", "Le Roi de la Fenetre", "Levoit", "Lidl", "Lights4fun", "Loberon", "Ma Clé", "Maeven Art", "Maison Berger", "Maisons du Monde", "ManoMano", "Manutan", "Materfrance", "Matt Sleeps", "Memorypur", "Miliboo", "Mirlux", "Mobili Fiver", "Momcozy", "Mon Bento", "Mondoshopping", "Narwal", "Noukies", "Olara", "Ooni", "Otovo", "Outiror", "Oviala", "Ozmoz", "Pet and Garden", "Peugeot Saveurs", "Pixel Corner", "Pro Breeze"]
+      },
+      {
+        cat: "Beauté",
+        rpOnly: ["3PPharma", "Al Jazeera Perfumes", "Armani Beauty", "Atida Santédiscount", "Beauté Privée", "Body & Fit", "Charlotte Tilbury", "Cocooncenter", "Daylily Paris", "Delihemp", "Diamond Smile", "Donnerberg", "Dr Smile", "Eafit", "Ecco Verde", "Erborian", "Eric Favre", "Firmoo", "Fitadium", "Flaconi", "Freshly Cosmetics", "Ghd", "Glossybox", "Grand Optical", "Hearing Direct", "Ioma", "Kiko", "L'Oreal Paris", "La Roche Posay", "Lancôme", "Lemon Curve", "Ma Louloute", "Mama Kana", "Manucurist", "Medik8", "Melvita", "Merci Handy", "MyProtein", "Natura Brasil", "Nocibé", "Percko", "Pin Up Secret", "Polaar", "Rituals", "Sephora", "Skean Beauty"],
+        rrOnly: ["Apohealth", "Avant Skincare", "Cult Beauty", "Dermsilk", "Esn", "Iherb", "L'Occitane", "Marionnaud", "NARS", "Notino", "Oral B", "Perfumes Club", "Stylevana", "Yves Rocher"],
+        both: ["123optic", "Adopt Parfum", "Adore Lenses", "Ahead Nutrition", "Asam Beauty", "Banana Beauty", "Biotyfull Box", "Biovea", "Bulk", "Christophe Robin", "Clarins", "DocMorris", "Dr Pierre Ricaud", "Fleurance Nature", "Foreo", "Helena Rubinstein", "Hyperice", "Jesenslebonheur", "Kerastase", "Korres", "L'Atelier du Sourcil", "La Maison Valmont", "Laboratoires Biarritz", "Laboratoires Filorga", "Lea Nature", "Lenstore", "Lentiamo", "Life Extension", "Lookfantastic", "Madara", "Magnifaik", "Malentille", "Medicross Labs", "Mincidelice", "Miniweight", "My Beauty Factory", "MyVitamins", "Nat & Form", "Nuxe", "Otticanet", "Paranatura", "Parasantéonline", "Paula's Choice", "Pazzox", "Pediact", "Pediakid", "Performe", "Primor", "Propolia", "Revolution Beauty", "The Beauty Corner"]
+      },
+      {
+        cat: "Loisirs",
+        rpOnly: ["3DJake", "Alpiniste", "Audible", "Babbel", "Billetreduc", "Blizzard Gear Store", "Dazn France", "Dogchef", "Draeger Paris", "Figurines Goodies", "Fitness Boutique", "France Trampoline", "Glisshop", "Go Sport", "I-Run", "Janod", "Japhy", "Lepape", "Ma Fabrik", "Maxicours", "Micromania", "Morin", "Moyu", "Musculation", "Oh Pacha", "Olight", "Padel Point", "Pilotage Passion", "Proform", "Puzzle You", "Real Madrid Store", "Rossignol", "Rougier & Plé", "Rue de la Fête", "Rue des Maquettes", "Rue des Puzzles", "Salomon", "Schleich", "Tonton Outdoor"],
+        rrOnly: ["Decathlon", "Difmark", "Disney Store", "F1 Store", "Fanatics", "Fever", "Foot Locker", "Gear4music", "Groupon", "Hrk Game", "Lego", "Nature & Découvertes"],
+        both: ["1001 Hobbies", "365 Rider", "4kidspoint", "Adidas Padel", "Agfaphoto Print", "Aktive", "AM Nutrition", "Avenue des Jeux", "Basket Center", "Cheerz", "Colorland", "Costumalia", "Cultura", "Deguisetoi", "Detecteurs", "Direct Running", "Direct Volley", "Endurance Store", "Equilibre et Instinct", "Espace Golf", "Foot Center", "Foot Store", "Footjoy", "Franssen Loisirs", "Galop Store", "Gameseal", "Gamivo", "Goodbro", "Handball Store", "Horseven", "House of Rugby", "Just Russel", "Kinguin", "La Puzzlerie", "La Sellerie de Mae", "Le Géant des Beaux Arts", "Lunii", "Manawa", "Maverton", "Maxi Zoo", "MyPoster", "Nausicaa", "On Fight", "Padel Nuestro", "Palma Aquarium", "Pandahall", "Parc Astérix", "Paris Saint-Germain Store", "Pen Store", "Pepette", "Petit Zèbre", "Photobox", "Photoweb", "Pixum", "Planetfoot", "Play Bac Presse", "Popsa", "Printerpix", "Speedo", "Suunto", "Trek Expert", "Zooplus"]
+      },
+      {
+        cat: "Voyages",
+        rpOnly: ["Dotdrops", "Flixbus", "Gsell", "Rayon d'Or", "Saily"],
+        rrOnly: ["Abritel", "Agoda", "Air Caraïbes", "Airhelp", "Airpaz", "Aloha Vacances", "Appartcity", "Avis", "Bahia Principe", "Balearia", "Belvilla", "Best Western", "Brussels Airlines", "Cathay Pacific", "Citizenm", "Clickboat", "Costa Croisières", "Edreams", "Enjoy Travel", "Evancy", "Expedia", "Free2move", "Frenchbee", "Gites", "Goelia", "Goldcar", "Hertz", "Holiday Extras", "Holidu", "Hotels.com", "Iberia", "Kiwicom", "Lastminute", "Les Castels", "Lufthansa", "Omio", "Opodo", "Parkvia", "PO Ferries", "Quick Parking"],
+        both: ["American Tourister", "Baage", "Delsey Paris", "Dfds", "Direct Ferries", "Jumbo Car Guyane"]
+      },
+      {
+        cat: "Cuisine & Alimentation",
+        rpOnly: ["123fleurs", "Abeille Heureuse", "Aquarelle", "Bene Bono", "Bienmanger.com", "Café Royal", "Comtesse du Barry", "Dolce Gusto", "Domino's Pizza", "Famileat", "Famille Mary", "Fauchon", "Houra", "Lavazza", "My American Shop", "Potager City"],
+        rrOnly: ["Carrefour", "HelloFresh", "Outin"],
+        both: ["Agour", "Bergamotte", "Café Coton", "Gerard Bertrand", "Holy", "Illy", "Interflora", "Jarmino", "Javry", "Kusmi Tea", "Les Trésors d'Erable", "Monoprix", "Naturalia", "Phenix", "Quai Sud"]
+      },
+      {
+        cat: "Auto & Moto",
+        rpOnly: ["Bip & Go", "Maxxess", "Racechip"],
+        rrOnly: ["Norauto", "Oscaro"],
+        both: ["123pneus", "Autodoc", "Autodistribution", "Carpardoo", "Carplug", "Daparto", "Goodwheel", "Isinwheel", "La Bécannerie", "Le Motard Bleu", "Maxiscoot", "Maxpeedingrods", "Mister Auto", "Navee"]
+      }
+    ];
+
+    // Reconstruction automatique de la base unifiée
+    const merchants = [];
+    dataGroups.forEach(group => {
+      if (group.rpOnly) {
+        group.rpOnly.forEach(name => merchants.push({ name, cat: group.cat, rp: true, rr: false }));
+      }
+      if (group.rrOnly) {
+        group.rrOnly.forEach(name => merchants.push({ name, cat: group.cat, rp: false, rr: true }));
+      }
+      if (group.both) {
+        group.both.forEach(name => merchants.push({ name, cat: group.cat, rp: true, rr: true }));
+      }
+    });
+
+    // Tri alphabétique
+    merchants.sort((a, b) => a.name.localeCompare(b.name, 'fr', { sensitivity: 'base' }));
+
     let activeRP = true;
     let activeRR = true;
-
-    fetch('./merchants.json')
-      .then(res => {
-        if (!res.ok) throw new Error("Fichier introuvable");
-        return res.json();
-      })
-      .then(data => {
-        merchants = data;
-        render();
-      })
-      .catch(err => {
-        document.getElementById('counter').textContent = "Erreur : le fichier merchants.json est vide ou mal formaté.";
-      });
 
     function toggleFilter(type) {
       if (type === 'RP') {
@@ -89,7 +144,7 @@
         return nameMatch || catMatch;
       });
 
-      document.getElementById('counter').textContent = `${filtered.length} marchand(s) trouvé(s) sur ${merchants.length}`;
+      document.getElementById('counter').textContent = `${filtered.length} marchand(s) affiché(s) sur ${merchants.length}`;
 
       if (filtered.length === 0) {
         list.innerHTML = '<div class="empty-state">Aucun marchand correspondant.</div>';
@@ -116,6 +171,7 @@
     }
 
     document.getElementById('searchInput').addEventListener('input', render);
+    render();
   </script>
 </body>
 </html>
