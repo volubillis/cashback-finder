@@ -12,7 +12,7 @@
     .search-box { width: 100%; padding: 12px 14px; font-size: 1rem; border: 1px solid #ccc; border-radius: 10px; outline: none; margin-bottom: 12px; background: #fff; }
     .search-box:focus { border-color: #0070f3; }
     .filter-group { display: flex; gap: 8px; margin-bottom: 16px; }
-    .filter-btn { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; background: #fff; font-size: 0.9rem; font-weight: bold; cursor: pointer; text-align: center; }
+    .filter-btn { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ccc; background: #fff; font-size: 0.85rem; font-weight: bold; cursor: pointer; text-align: center; }
     .filter-btn.active { background: #0070f3; color: #fff; border-color: #0070f3; }
     .meta-bar { font-size: 0.85rem; color: #555; margin-bottom: 12px; }
     .merchant-list { display: flex; flex-direction: column; gap: 8px; }
@@ -33,33 +33,103 @@
     <h1>Trouveur Cashback</h1>
   </header>
 
-  <input type="text" id="searchInput" class="search-box" placeholder="Rechercher une enseigne ou un mot-clé...">
+  <input type="text" id="searchInput" class="search-box" placeholder="Rechercher une enseigne, produit (matelas, outils...)...">
 
   <div class="filter-group">
-    <button class="filter-btn active" id="btnRP" onclick="toggleFilter('RP')">Réductions Privées</button>
-    <button class="filter-btn active" id="btnRR" onclick="toggleFilter('RR')">Remises & Réductions</button>
+    <button class="filter-btn active" id="btnRP" onclick="toggleFilter('RP')">Réductions Privées (20%)</button>
+    <button class="filter-btn active" id="btnRR" onclick="toggleFilter('RR')">Remises & Réductions (15%)</button>
   </div>
 
   <div class="meta-bar">
-    <span id="counter">Chargement des marchands...</span>
+    <span id="counter">0 marchand trouvé</span>
   </div>
 
   <div id="merchantList" class="merchant-list"></div>
 
   <script>
-    let merchants = [];
+    const merchants = [
+      { name: "Adidas", cat: "Mode", rp: true, rr: true },
+      { name: "Nike", cat: "Mode", rp: true, rr: true },
+      { name: "New Balance", cat: "Mode", rp: true, rr: true },
+      { name: "Bershka", cat: "Mode", rp: true, rr: true },
+      { name: "Calzedonia", cat: "Mode", rp: true, rr: true },
+      { name: "Celio", cat: "Mode", rp: true, rr: true },
+      { name: "Etam", cat: "Mode", rp: true, rr: true },
+      { name: "Kiabi", cat: "Mode", rp: true, rr: true },
+      { name: "La Halle", cat: "Mode", rp: true, rr: true },
+      { name: "Sarenza", cat: "Mode", rp: true, rr: true },
+      { name: "Spartoo", cat: "Mode", rp: true, rr: true },
+      { name: "Stradivarius", cat: "Mode", rp: true, rr: true },
+      { name: "Undiz", cat: "Mode", rp: true, rr: true },
+      { name: "Levi's", cat: "Mode", rp: false, rr: true },
+      { name: "Puma", cat: "Mode", rp: false, rr: true },
+      { name: "Zara", cat: "Mode", rp: false, rr: true },
+      { name: "Zalando", cat: "Mode", rp: false, rr: true },
+      { name: "Darty", cat: "High Tech", rp: true, rr: true },
+      { name: "Fnac", cat: "High Tech", rp: true, rr: true },
+      { name: "Boulanger", cat: "High Tech", rp: true, rr: true },
+      { name: "Asus", cat: "High Tech", rp: true, rr: true },
+      { name: "Samsung", cat: "High Tech", rp: true, rr: true },
+      { name: "Sony", cat: "High Tech", rp: true, rr: true },
+      { name: "Acer", cat: "High Tech", rp: true, rr: true },
+      { name: "Dyson", cat: "High Tech", rp: true, rr: true },
+      { name: "PcComponentes", cat: "High Tech", rp: true, rr: true },
+      { name: "Cdiscount", cat: "High Tech", rp: false, rr: true },
+      { name: "AliExpress", cat: "High Tech", rp: false, rr: true },
+      { name: "Lenovo", cat: "High Tech", rp: false, rr: true },
+      { name: "ManoMano", cat: "Maison", rp: true, rr: true },
+      { name: "Emma Matelas", cat: "Maison", rp: true, rr: true },
+      { name: "Alba Matelas", cat: "Maison", rp: true, rr: true },
+      { name: "Allotapis", cat: "Maison", rp: true, rr: true },
+      { name: "Alterego Design", cat: "Maison", rp: true, rr: true },
+      { name: "Bultex", cat: "Maison", rp: true, rr: true },
+      { name: "Lidl", cat: "Maison", rp: true, rr: true },
+      { name: "Maisons du Monde", cat: "Maison", rp: true, rr: true },
+      { name: "Castorama", cat: "Maison", rp: false, rr: true },
+      { name: "Conforama", cat: "Maison", rp: false, rr: true },
+      { name: "Brico Dépôt", cat: "Maison", rp: false, rr: true },
+      { name: "IKEA", cat: "Maison", rp: false, rr: true },
+      { name: "Kiko", cat: "Beauté", rp: true, rr: true },
+      { name: "Clarins", cat: "Beauté", rp: true, rr: true },
+      { name: "Adopt Parfum", cat: "Beauté", rp: true, rr: true },
+      { name: "Lancôme", cat: "Beauté", rp: true, rr: true },
+      { name: "MyProtein", cat: "Beauté", rp: true, rr: true },
+      { name: "Biovea", cat: "Beauté", rp: true, rr: true },
+      { name: "DocMorris", cat: "Beauté", rp: true, rr: true },
+      { name: "Sephora", cat: "Beauté", rp: true, rr: false },
+      { name: "Nocibé", cat: "Beauté", rp: true, rr: false },
+      { name: "Marionnaud", cat: "Beauté", rp: false, rr: true },
+      { name: "Yves Rocher", cat: "Beauté", rp: false, rr: true },
+      { name: "Monoprix", cat: "Cuisine & Alimentation", rp: true, rr: true },
+      { name: "Bienmanger.com", cat: "Cuisine & Alimentation", rp: true, rr: true },
+      { name: "Café Royal", cat: "Cuisine & Alimentation", rp: true, rr: true },
+      { name: "Carrefour", cat: "Cuisine & Alimentation", rp: false, rr: true },
+      { name: "HelloFresh", cat: "Cuisine & Alimentation", rp: false, rr: true },
+      { name: "Suunto", cat: "Loisirs", rp: true, rr: true },
+      { name: "Tonton Outdoor", cat: "Loisirs", rp: true, rr: false },
+      { name: "Cultura", cat: "Loisirs", rp: true, rr: true },
+      { name: "Zooplus", cat: "Loisirs", rp: true, rr: true },
+      { name: "Maxi Zoo", cat: "Loisirs", rp: true, rr: true },
+      { name: "Micromania", cat: "Loisirs", rp: true, rr: true },
+      { name: "Trek Expert", cat: "Loisirs", rp: true, rr: true },
+      { name: "Endurance Store", cat: "Loisirs", rp: true, rr: true },
+      { name: "Decathlon", cat: "Loisirs", rp: false, rr: true },
+      { name: "Lego", cat: "Loisirs", rp: false, rr: true },
+      { name: "Oscaro", cat: "Auto & Moto", rp: false, rr: true },
+      { name: "Norauto", cat: "Auto & Moto", rp: false, rr: true },
+      { name: "Autodoc", cat: "Auto & Moto", rp: true, rr: true },
+      { name: "Mister Auto", cat: "Auto & Moto", rp: true, rr: true },
+      { name: "Bip & Go", cat: "Auto & Moto", rp: true, rr: true },
+      { name: "American Tourister", cat: "Voyages", rp: true, rr: true },
+      { name: "Delsey Paris", cat: "Voyages", rp: true, rr: true },
+      { name: "Flixbus", cat: "Voyages", rp: true, rr: true },
+      { name: "Abritel", cat: "Voyages", rp: false, rr: true },
+      { name: "Hotels.com", cat: "Voyages", rp: false, rr: true },
+      { name: "Opodo", cat: "Voyages", rp: false, rr: true }
+    ];
+
     let activeRP = true;
     let activeRR = true;
-
-    fetch('merchants.json')
-      .then(r => r.json())
-      .then(data => {
-        merchants = data;
-        render();
-      })
-      .catch(() => {
-        document.getElementById('counter').textContent = "Erreur de chargement du fichier merchants.json";
-      });
 
     function toggleFilter(type) {
       if (type === 'RP') {
@@ -113,6 +183,7 @@
     }
 
     document.getElementById('searchInput').addEventListener('input', render);
+    render();
   </script>
 </body>
 </html>
