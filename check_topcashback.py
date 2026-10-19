@@ -11,7 +11,7 @@ class Parser(HTMLParser):
   if t in ('h1','h2','h3','p','div','tr','li','span','td','br'):self.parts.append('\n')
  def handle_data(self,d):
   if not self.skip:self.parts.append(d)
-urls={'Carrefour':'https://www.topcashback.fr/carrefour/','Courses U':'https://www.topcashback.fr/courses-u/','Uber':'https://www.topcashback.fr/uber/'}
+urls={'Carrefour':'https://www.topcashback.fr/carrefour/','Courses U':'https://www.topcashback.fr/courses-u/','Uber Eats':'https://www.topcashback.fr/uber-eats/'}
 offers=[]
 for name,url in urls.items():
  try:
