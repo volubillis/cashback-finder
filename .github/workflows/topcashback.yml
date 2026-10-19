@@ -3,11 +3,10 @@ name: Surveillance et taux TopCashback
 
 on:
   schedule:
-    # Promotions speciales : toutes les 15 minutes environ
+    # Surveillance des promotions toutes les 15 minutes environ
     - cron: '7,22,37,52 * * * *'
 
-    # Actualisation quotidienne des taux
-    # 9 h en France : 7 h UTC en ete, 8 h UTC en hiver
+    # Horaire reserve aux taux : 9 h en France
     - cron: '0 7,8 * * *'
 
   workflow_dispatch:
@@ -51,29 +50,17 @@ jobs:
       - name: Determiner si les taux doivent etre actualises
         id: daily
         shell: bash
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          EVENT_SCHEDULE: ${{ github.event.schedule }}
-          MANUAL_UPDATE: ${{ inputs.update_rates }}
         run: |
           echo "run=false" >> "$GITHUB_OUTPUT"
+          echo "Mise a jour des taux suspendue temporairement."
 
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$MANUAL_UPDATE" = "true" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Actualisation manuelle demandee."
-          elif [ "$EVENT_SCHEDULE" = "0 7,8 * * *" ] && [ "$(TZ=Europe/Paris date +%H)" = "09" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Actualisation quotidienne de 9 h."
-          else
-            echo "Aucune actualisation des taux necessaire."
-          fi
-
+      # Desactive jusqu'a validation du nouveau systeme
       - name: Actualiser les taux marchands
-        if: steps.daily.outputs.run == 'true'
+        if: ${{ false }}
         run: python update_topcashback_rates.py
 
       - name: Enregistrer les nouveaux taux
-        if: steps.daily.outputs.run == 'true'
+        if: ${{ false }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -82,14 +69,8 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "Mise a jour des taux TopCashback"
-
-            # Conserver temporairement les modifications non commitees
             git -c rebase.autoStash=true pull --rebase origin main
-
-            # Envoyer les nouveaux taux vers GitHub
             git push origin HEAD:main
-          else
-            echo "Aucun nouveau taux a enregistrer."
           fi
 
       - name: Valider les donnees
