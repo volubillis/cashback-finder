@@ -1,30 +1,51 @@
-
 name: Surveillance TopCashback
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
-  check:
+  monitor-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verifier les offres
+
+      - name: Verifier les offres TopCashback
         run: python check_topcashback.py
-      - name: Publier les resultats
+
+      - name: Verifier le JSON produit
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add topcashback-alerts.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Actualisation TopCashback"
-            git push
-          fi
+          python -m json.tool topcashback-alerts.json > /dev/null
+          test -f index.html
+
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparer les fichiers du site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Publier sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
