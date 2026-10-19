@@ -3,10 +3,20 @@ name: Surveillance et taux TopCashback
 
 on:
   schedule:
+    # Promotions speciales : toutes les 15 minutes environ
     - cron: '7,22,37,52 * * * *'
-    # 09:00 in France is 07:00 UTC (summer) or 08:00 UTC (winter).
+
+    # Taux marchands : 9 h en France
+    # 07:00 UTC en ete, 08:00 UTC en hiver
     - cron: '0 7,8 * * *'
+
   workflow_dispatch:
+    inputs:
+      update_rates:
+        description: 'Actualiser tous les taux TopCashback maintenant ?'
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,43 +31,59 @@ jobs:
   monitor-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 55
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Installer Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Detecter les promotions speciales
         run: python check_topcashback.py
 
-      - name: Verifier si 9 h en France
+      - name: Determiner si les taux doivent etre actualises
         id: daily
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+          MANUAL_UPDATE: ${{ inputs.update_rates }}
         run: |
-          if [ "${{ github.event.schedule }}" = "0 7,8 * * *" ] && [ "$(TZ=Europe/Paris date +%H)" = "09" ]; then
+          echo "run=false" >> "$GITHUB_OUTPUT"
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$MANUAL_UPDATE" = "true" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Actualisation manuelle demandee."
+          elif [ "$EVENT_SCHEDULE" = "0 7,8 * * *" ] && [ "$(TZ=Europe/Paris date +%H)" = "09" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Actualisation quotidienne de 9 h."
           else
-            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Aucune actualisation des taux necessaire."
           fi
 
-      - name: Actualiser les taux marchands (une fois par jour)
+      - name: Actualiser les taux marchands
         if: steps.daily.outputs.run == 'true'
         run: python update_topcashback_rates.py
 
-      - name: Enregistrer les taux quotidiens pour les prochains deploiements
+      - name: Enregistrer les nouveaux taux
         if: steps.daily.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add topcashback-rates.json
+
           if ! git diff --cached --quiet; then
-            git commit -m "Mise a jour quotidienne taux TopCashback"
-            git push
+            git commit -m "Mise a jour des taux TopCashback"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
       - name: Valider les donnees
@@ -66,9 +92,11 @@ jobs:
           python -m json.tool topcashback-rates.json > /dev/null
           test -f index.html
 
-      - uses: actions/configure-pages@v5
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Preparer les fichiers du site
+        uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
 
