@@ -1,4 +1,42 @@
 {
-  "checked_at": null,
-  "offers": []
+  "checked_at": "2026-10-19T16:27:52.994474+00:00",
+  "offers": [
+    {
+      "name": "Carrefour",
+      "url": "https://www.topcashback.fr/carrefour/",
+      "active": false,
+      "amount_eur": null,
+      "status": "ok",
+      "observed_amounts_eur": [
+        300.0,
+        5.0,
+        0.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "name": "Courses U",
+      "url": "https://www.topcashback.fr/courses-u/",
+      "active": true,
+      "amount_eur": 10,
+      "status": "ok",
+      "observed_amounts_eur": [
+        300.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "name": "Uber",
+      "url": "https://www.topcashback.fr/uber/",
+      "active": false,
+      "amount_eur": null,
+      "status": "ok",
+      "observed_amounts_eur": [
+        300.0,
+        3.0
+      ]
+    }
+  ]
 }
