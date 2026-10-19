@@ -70,7 +70,7 @@ jobs:
 
       - name: Actualiser les taux marchands
         if: steps.daily.outputs.run == 'true'
-        run: python update_topcashback_rates.py
+        run: python update_topcashback_rates_diagnostic.py
 
       - name: Enregistrer les nouveaux taux
         if: steps.daily.outputs.run == 'true'
