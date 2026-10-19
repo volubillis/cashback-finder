@@ -1,6 +1,1137 @@
 {
-  "checked_at": null,
-  "verified_this_run": 0,
+  "checked_at": "2026-10-19T18:01:35.362545+00:00",
+  "verified_this_run": 226,
   "merchants_checked": 1221,
-  "rates": {}
+  "rates": {
+    "https://www.topcashback.fr/1001-hobbies/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/1001-pendules/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/123-reg/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/123pneus/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/24bottles/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/24mx/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/4s-esim/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/aarke/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ab-croisiere/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/abebooks/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/abritel/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ac-deco/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/acer/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/activastore/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/adagio-aparthotel/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/adagio-teas/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/adam-et-eve/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/adfr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/adidas/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/afb/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/agfaphoto-belgique/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/agfaphoto-print/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/agfaphoto/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/agoda/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/agour-fr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/air-caraibes/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/air-india/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/air-serbia/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/airalo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/airasia-travel/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/airfrance-klm-flying-blue-points/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/airhelp/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/airportrentalcars/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/akko/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alamo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alamy/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alaska-airlines-mileage-plan-points/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alba-matelas/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alexandre-de-paris/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alibaba-france/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/allegra-k/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/allpowers/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/allu/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/aloa-vacances/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/altearah/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/alterego-design/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/am-nutrition/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/amazon-music/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/amazon-prime-video/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/amazon-via-startselect/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ambientedirect/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/amen/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/american-tourister/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ammareal/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/amniens/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/angelvpn/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/anime-digital-network-via-startselect/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/animojo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/anker/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/antipodes/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/antonioli/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/anydesk/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/anyvan/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/aosom/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/appartcity/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/appearanz/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/apple-via-startselect/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/apricot/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/arcteryx-equipment/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/arctic-pure/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/arka-fr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/arlo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/armani/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/asambeauty/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/asgoodasnew/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ashampoo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ashford/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/asmc/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/asos/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/aston-villa-store/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/asus/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/athena/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/atlet-nutrition/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/auchan-telecom/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/auchan-via-ma-carte-cadeau/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/auchan-voyages/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/audible/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/authentic-europe/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/authentic-scandinavia/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/autodesk/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/autodistributionfr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/autoeurope/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/automotocompare/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/avast-software/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/avg-technologies/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/avianca/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/avis/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/aw-bridal/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/aweber/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/axkid/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/baage/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/babbel/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/baby-deep-sleep/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/babybio/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/balabooste/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/balearia/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bam/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/banak/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/banana-beauty/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/banggood/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/base-blu/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/baserange/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bayard-jeunesse/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bazaravenue/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bb-malin/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bdfugue/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beaba/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bears-with-benefits/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beautifiedyou/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beauty-bay/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beauty-forever/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beauty-success/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beckett-media/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/beerwulf/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bemz/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bergamotte/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bernardelli-store/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/best-drive/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bett1/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bic/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/big-green-smile/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bijourama/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bijoux-femmes/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bikehello/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/biocoop/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/biolane/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/biotyfull-box/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/biovea/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bitdefender/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bleu-calin/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/blissim/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/blizzard-via-startselect/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bloch/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/blu-fr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/blue-skincare/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bluebella/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bluefin/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bluetti-global/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bob-ore-blue-collection/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bobshop/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bocage/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/boohoo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/boohooman/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bosch-belgique/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bosch/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/boticinal/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bouygues-telecom-esim/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/brasero-artisan/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/braun/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/brico-depot/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bricoselect/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/brookstone/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bruneau-fr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/brussels-airlines/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bsp-auto/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bstn/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/budget/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/budgetair/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bugaboo/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bulk/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/bulova/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/business-class/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/busuu/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/buttinette/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/buybestgear/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/byfood/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/c-monetiquette/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cabin-zero/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/calvin-klein/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/calzedonia/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/camif/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/camper/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/camperdays/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/canal-plus/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/capcut/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/carigami/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/caroll-belgique/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/caroll/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/carpardoofr/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/carplug/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/carrefour-location/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/carrefour/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cartouche-club/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cartouche-du-toner/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/carvertical/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/castorama-via-ma-carte-cadeau/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/castorama/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cathay-pacific/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cbd/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/ccleaner/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cdiscount-billetterie/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cdiscount-voyages/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/centauro-rent-a-car/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/centrale-brico/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cgr-recif-cinemas-via-ma-carte-cadeau/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/champion-direct/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/changegroup/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/charles-tyrwhitt/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/charlotte-tilbury/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cheapoair/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/checkmybodyhealth/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/chelsea-megastore/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/chi-chi-london/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/childsplay-clothing/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/choice-hotels/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/christophe-robin/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/chronopost/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cinema-mk2-via-ma-carte-cadeau/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/citadium/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/citizenm/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/clarins-belgique/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/claudie-pierlot/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cleor/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/clip-studio-paint/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/cocunat/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    },
+    "https://www.topcashback.fr/coffeesoft/": {
+      "rate": "300 € Cashback",
+      "status": "ok",
+      "verified_at": "2026-10-19T18:01:35.362545+00:00"
+    }
+  }
 }
