@@ -6,8 +6,8 @@ on:
     # Promotions speciales : toutes les 15 minutes environ
     - cron: '7,22,37,52 * * * *'
 
-    # Taux marchands : 9 h en France
-    # 07:00 UTC en ete, 08:00 UTC en hiver
+    # Actualisation quotidienne des taux
+    # 9 h en France : 7 h UTC en ete, 8 h UTC en hiver
     - cron: '0 7,8 * * *'
 
   workflow_dispatch:
@@ -82,8 +82,14 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "Mise a jour des taux TopCashback"
-            git pull --rebase origin main
+
+            # Conserver temporairement les modifications non commitees
+            git -c rebase.autoStash=true pull --rebase origin main
+
+            # Envoyer les nouveaux taux vers GitHub
             git push origin HEAD:main
+          else
+            echo "Aucun nouveau taux a enregistrer."
           fi
 
       - name: Valider les donnees
