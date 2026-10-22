@@ -2,6 +2,12 @@
 name: Surveillance et taux TopCashback
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - '.github/workflows/topcashback.yml'
+
   schedule:
     # Surveillance des promotions toutes les 15 minutes environ
     - cron: '7,22,37,52 * * * *'
