@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-27",
+  "corrected": true,
+  "aliases_merged": [
+    "Batterie-Boutique",
+    "Bodycross (FR)",
+    "Desigual.com",
+    "Le Site de La Pièce",
+    "See tickets FR",
+    "Nuxe FR",
+    "Aosom FR",
+    "TwentyDC FR",
+    "La Boite Rose FR",
+    "Vevor FR",
+    "Songmics FR",
+    "ShowroomPrivé FR",
+    "Direct Running FR",
+    "Marc Orian FR",
+    "BAZARCHIC FR",
+    "Bobshop FR",
+    "Stores-Discount FR",
+    "Bebe Boutik FR"
+  ],
+  "rp_confirmed_removed": [
+    [
+      "Thecoolrepublic.Com",
+      "696f02d18a6c96c927592093"
+    ]
+  ],
+  "history_events": [
+    {
+      "platform": "rp",
+      "name": "Batterie-Boutique FR",
+      "id": "6ad2f81ff92d56bc95855c5a",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Maison Amour",
+      "id": "6aded51ca7d4f41774ef76b5",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Lunazone FR",
+      "id": "6ae02725c27574ced3d396d9",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Scento",
+      "id": "6ae0272cc27574ced3d396ef",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "wi",
+      "name": "Ava & May",
+      "id": "",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "wi",
+      "name": "Qonto",
+      "id": "",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "High",
+      "id": "6936af1fa8beb28ede6e5c4e",
+      "type": "remove",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Omy maison",
+      "id": "672453861966b5e36bd41b37",
+      "type": "remove",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Thecoolrepublic.Com",
+      "id": "696f02d18a6c96c927592093",
+      "type": "remove",
+      "date": "2026-10-27"
+    }
+  ],
+  "counts": {
+    "rp": 1577,
+    "rr": 1091,
+    "wi": 2396,
+    "tc": 1288
+  },
+  "records": 4000
+}
