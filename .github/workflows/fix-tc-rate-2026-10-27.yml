@@ -1,0 +1,32 @@
+name: Finalize TopCashback rate changes October 27
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-tc-rate-2026-10-27.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set exact rate changes
+        run: |
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          rates=[{"name":"Bergamotte","old":"10% Cashback","next":"Jusqu'à 10% Cashback"},{"name":"Expedia","old":"Jusqu'à 7% Cashback","next":"Jusqu'à 8% Cashback"},{"name":"Hotels.com","old":"4% Cashback","next":"10% Cashback"},{"name":"La Femme Moderne","old":"5% Cashback","next":"Jusqu'à 8% Cashback"},{"name":"Lights4fun","old":"5% Cashback","next":"Jusqu'à 5% Cashback"},{"name":"Lookfantastic","old":"Jusqu'à 20% Cashback","next":"Jusqu'à 7% Cashback"},{"name":"Qatar airways","old":"4% Cashback","next":"2% Cashback"},{"name":"Ultra Premium Direct","old":"Jusqu'à 14% Cashback","next":"Jusqu'à 18% Cashback"}]
+          a=s.index('const TC_RATE_CHANGES_DEFAULT=')
+          b=s.index(';',a)+1
+          s=s[:a]+'const TC_RATE_CHANGES_DEFAULT='+json.dumps(rates,ensure_ascii=False,separators=(',',':'))+';'+s[b:]
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || (git commit -m "Fix TC rate change table 27 Oct 2026" && git push)
