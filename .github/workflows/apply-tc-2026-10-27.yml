@@ -1,0 +1,66 @@
+name: Apply TopCashback CSV 2026-10-27
+on:
+  push:
+    paths:
+      - 'updates/tc-2026-10-27.csv'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update cashback index
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv,json,re,datetime
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          a=s.index('const SEED=')+len('const SEED=')
+          b=s.index('];',a)+1
+          seed=json.loads(s[a:b])
+          rows=list(csv.DictReader(Path('updates/tc-2026-10-27.csv').open(encoding='utf-8-sig',newline='')))
+          def path(u): return re.sub(r'/+$','',re.sub(r'^https?://[^/]+','',u or '')).lower()
+          index={path(x.get('tcUrl','')):x for x in seed if x.get('tc')}
+          oldrates={k:x.get('tcRate','') for k,x in index.items()}
+          def norm(v): return re.sub('[^a-z0-9]','',str(v or '').lower())
+          added=[]
+          changed=[]
+          for row in rows:
+            url=row['cat-result href']
+            name=row['cat-result-info__name']
+            rate=row['cat-result-info__rate']
+            k=path(url)
+            if k in index:
+              x=index[k]
+              if x.get('tcRate')!=rate: changed.append({'name':name,'old':x.get('tcRate',''),'next':rate})
+            else:
+              x=next((x for x in seed if not x.get('tc') and norm(name) in [norm(v) for v in [x.get('name'),x.get('rp'),x.get('rr'),x.get('wi')]+x.get('wiAliases',[])]),None)
+              if x is None:
+                x={'name':name,'rp':'','rr':'','wi':'','match':'TopCashback seul'}
+                seed.append(x)
+              added.append(name)
+            x.update(tc=name,tcRate=rate,tcUrl=url,tcLogo=row['cat-result__logo-wrap src'],tcDesc=row['cat-result-info__desc'],tcDate='2026-10-27')
+          assert len(rows)==1287 and set(added)=={'OUIGO','Weekendesk','Varsity Base'},(len(rows),added)
+          s=s[:a]+json.dumps(seed,ensure_ascii=False,separators=(',',':'))+s[b:]
+          migrate="""\n// Synchronisation TopCashback 2026-10-27 en préservant les autres plateformes.
+          try{if(localStorage.getItem('cashback_tc_seed_20261027')!=='1'){const index=new Map(records.map(r=>[key(r.name),r]));const urls=new Map(records.filter(r=>r.tcUrl).map(r=>[String(r.tcUrl).replace(/\\/+$/,'').toLowerCase(),r]));for(const source of SEED.filter(r=>r.tcDate==='2026-10-27')){let dest=urls.get(String(source.tcUrl).replace(/\\/+$/,'').toLowerCase())||index.get(key(source.name));if(dest){for(const f of ['tc','tcRate','tcUrl','tcLogo','tcDesc','tcDate'])dest[f]=source[f]}else{records.push({...source});index.set(key(source.name),source)}}localStorage.setItem(STORAGE,JSON.stringify(records));localStorage.setItem('cashback_tc_seed_20261027','1')}}catch(e){}\n"""
+          s=s.replace('const TC_VERIFIED_20261021=',migrate+'const TC_VERIFIED_20261021=',1)
+          events="const TC_CHANGES_20261027="+json.dumps([{'platform':'tc','name':n,'id':'','type':'add','date':'2026-10-27'} for n in added],ensure_ascii=False,separators=(',',':'))+";\n"
+          s=s.replace('const CHANGE_STORAGE=',events+'const CHANGE_STORAGE=',1)
+          s=s.replace('const combined=[...RP_CHANGES_20261021','const combined=[...TC_CHANGES_20261027,...RP_CHANGES_20261021',1)
+          s=s.replace('changeHistory=[...RP_CHANGES_20261021','changeHistory=[...TC_CHANGES_20261027,...RP_CHANGES_20261021',1)
+          s=re.sub(r'const TC_RATE_CHANGES_DEFAULT=\\[.*?\\];','const TC_RATE_CHANGES_DEFAULT='+json.dumps(changed,ensure_ascii=False,separators=(',',':'))+';',s,count=1)
+          s=s.replace("tcRateDate='26/10/2026'","tcRateDate='27/10/2026'",1).replace(">'2026-10-26'",">'2026-10-27'",1)
+          p.write_text(s,encoding='utf-8')
+          print('Added:',added,'Rate changes:',len(changed),'Seed:',len(seed))
+          PY
+      - name: Publish update
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || (git commit -m "Update TopCashback 27 Oct 2026" && git push)
