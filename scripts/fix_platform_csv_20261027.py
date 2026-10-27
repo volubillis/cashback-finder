@@ -99,3 +99,5 @@ report={'date':'2026-10-27','corrected':True,'aliases_merged':alias_merged,'rp_c
 Path('updates/report-final-2026-10-27.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 assert s.count('const PLATFORM_CHANGES_20261027=')==1 and s.count('cashback_platform_seed_20261027_v2')==1
 print(json.dumps({'aliasesMerged':alias_merged,'removed':removed,'events':len(events),'counts':report['counts']},ensure_ascii=False))
+
+# Trigger final corrective integration.
