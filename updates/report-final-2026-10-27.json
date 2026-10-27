@@ -30,13 +30,6 @@
   "history_events": [
     {
       "platform": "rp",
-      "name": "Batterie-Boutique FR",
-      "id": "6ad2f81ff92d56bc95855c5a",
-      "type": "add",
-      "date": "2026-10-27"
-    },
-    {
-      "platform": "rp",
       "name": "Maison Amour",
       "id": "6aded51ca7d4f41774ef76b5",
       "type": "add",
@@ -98,5 +91,6 @@
     "wi": 2396,
     "tc": 1288
   },
-  "records": 4000
+  "records": 4000,
+  "canonical_name_restored": "Batterie-Boutique"
 }
