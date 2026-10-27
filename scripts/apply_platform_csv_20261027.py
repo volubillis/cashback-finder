@@ -9,7 +9,7 @@ src = ROOT.read_text(encoding='utf-8')
 start = src.index('const SEED=') + len('const SEED=')
 end = src.index('];', start) + 1
 seed = json.loads(src[start:end])
-reference_start = src.index('const MERCHANT_REFERENCE=') + len('const MERCHANT_REFERENCE=')
+reference_start = src.index('const MERCHANT_REFERENCE=') + len('const MERCHANT_REFERENCE=Object.freeze(')
 reference_end = src.index(');', reference_start)
 reference = json.loads(src[reference_start:reference_end])
 aliases = reference['canonicalAliases']
