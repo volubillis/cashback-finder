@@ -211,3 +211,5 @@ ROOT.write_text(src,encoding='utf-8')
 report={'date':DATE,'platforms':stats,'confirmed_rp_removed':removed,'new_history_events':events,'total_records':len(seed),'counts':{p:sum(bool(x.get(p)) for x in seed) for p in ('rp','rr','wi','tc')}}
 Path('updates/report-2026-10-27.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({'counts':report['counts'],'new':{p:len(stats[p]['new']) for p in stats},'unconfirmed':{p:len(stats[p]['unconfirmed_absences']) for p in stats},'removed':removed,'events':len(events)},ensure_ascii=False))
+
+# Trigger validated dataset integration workflow.
