@@ -1,0 +1,44 @@
+name: Correct Batterie-Boutique historical entry
+on:
+  push:
+    paths:
+      - 'updates/fix-batterie-historique-2026-10-27.txt'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preserve canonical merchant name and remove spurious add
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          a=s.index('const SEED=')+len('const SEED=')
+          b=s.index('];',a)+1
+          rows=json.loads(s[a:b])
+          matches=[r for r in rows if r.get('name')=='Batterie-Boutique FR']
+          if len(matches)==1:
+              matches[0]['name']='Batterie-Boutique'
+              s=s[:a]+json.dumps(rows,ensure_ascii=False,separators=(',',':'))+s[b:]
+          a=s.index('const PLATFORM_CHANGES_20261027=')+len('const PLATFORM_CHANGES_20261027=')
+          b=s.index(';',a)
+          ev=json.loads(s[a:b])
+          ev=[v for v in ev if not(v.get('platform')=='rp' and v.get('type')=='add' and v.get('name')=='Batterie-Boutique FR')]
+          s=s[:a]+json.dumps(ev,ensure_ascii=False,separators=(',',':'))+s[b:]
+          p.write_text(s,encoding='utf-8')
+          q=Path('updates/report-final-2026-10-27.json')
+          j=json.loads(q.read_text(encoding='utf-8'))
+          j['history_events']=ev
+          j['canonical_name_restored']='Batterie-Boutique'
+          q.write_text(json.dumps(j,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - name: Publish
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html updates/report-final-2026-10-27.json
+          git diff --cached --quiet || (git commit -m "Preserve Batterie-Boutique canonical history" && git push)
