@@ -1,0 +1,396 @@
+{
+  "date": "2026-10-27",
+  "platforms": {
+    "rp": {
+      "source": 1628,
+      "new": [
+        "See tickets FR",
+        "Nuxe FR",
+        "Aosom FR",
+        "TwentyDC FR",
+        "La Boite Rose FR",
+        "Vevor FR",
+        "Songmics FR",
+        "ShowroomPrivé FR",
+        "Direct Running FR",
+        "Marc Orian FR",
+        "BAZARCHIC FR",
+        "Bobshop FR",
+        "Stores-Discount FR",
+        "Bebe Boutik FR",
+        "Batterie-Boutique FR",
+        "Maison Amour",
+        "Lunazone FR",
+        "Scento"
+      ],
+      "rate_changes": [],
+      "unconfirmed_absences": [
+        "Aosom",
+        "Armani Beauty",
+        "Autodistribution.Fr",
+        "Batterie-Boutique",
+        "Bazarchic",
+        "Bebe Boutik",
+        "Benetton",
+        "Bobshop",
+        "BodyCross",
+        "Bugaboo",
+        "Café Coton",
+        "Caroll",
+        "Conrad",
+        "Cristal Forest",
+        "Dietbon",
+        "Direct Running",
+        "Dyson",
+        "Ea Fit",
+        "Eminence",
+        "Fackelmann",
+        "Gabiona",
+        "Goodbro",
+        "Granions",
+        "Grube",
+        "Happy Garden",
+        "High",
+        "La Boîte rose",
+        "Laudate",
+        "Le Site de La Pièce",
+        "Lord Of CBD",
+        "Marc Orian",
+        "Morgan",
+        "Navimow",
+        "Nuxe",
+        "Omy maison",
+        "Oscaro",
+        "Prescription Lab",
+        "Punch-Power",
+        "Saily",
+        "See tickets",
+        "ShowroomPrivé",
+        "Songmics",
+        "Stores Discount",
+        "Thecoolrepublic.Com",
+        "Twenty DC",
+        "Ulla Popken",
+        "Vevor",
+        "Vogel's",
+        "Wanimo",
+        "Zumub"
+      ]
+    },
+    "rr": {
+      "source": 1092,
+      "new": [
+        "LiberNovo",
+        "HiBike",
+        "Ava & May",
+        "Cavissima"
+      ],
+      "rate_changes": [
+        {
+          "name": "Interflora",
+          "old": "15% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "Myprotein",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Edreams France",
+          "old": "17% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Opodo",
+          "old": "15% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "Temu",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Lululemon",
+          "old": "15% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "Place DES Tendances",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Oppo",
+          "old": "17% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "Nocibé",
+          "old": "15% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "ESN",
+          "old": "15% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "Kinguin",
+          "old": "15% remboursés",
+          "new": "16% remboursés"
+        },
+        {
+          "name": "Abritel",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Expedia",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Helena Rubinstein",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        },
+        {
+          "name": "Biotyfull",
+          "old": "16% remboursés",
+          "new": "15% remboursés"
+        }
+      ],
+      "unconfirmed_absences": [
+        "Monoprix Mode"
+      ]
+    },
+    "wi": {
+      "source": 2397,
+      "new": [
+        "Ava & May",
+        "Qonto"
+      ],
+      "rate_changes": [
+        {
+          "name": "Fortuneo",
+          "old": "Jusqu'à 100,01€",
+          "new": "Jusqu'à 170€"
+        },
+        {
+          "name": "La Poste Mobile",
+          "old": "Jusqu'à 20,77€",
+          "new": "Jusqu'à 21€"
+        },
+        {
+          "name": "Lidl -",
+          "old": "Jusqu'à 5%",
+          "new": "14,29%"
+        },
+        {
+          "name": "Temu",
+          "old": "Jusqu'à 25%",
+          "new": "25%"
+        }
+      ],
+      "unconfirmed_absences": []
+    }
+  },
+  "confirmed_rp_removed": [
+    "High",
+    "Omy maison",
+    "Medoretcie"
+  ],
+  "new_history_events": [
+    {
+      "platform": "rp",
+      "name": "See tickets FR",
+      "id": "5f7734adda0230f72359fbe0",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Nuxe FR",
+      "id": "5f7734b9da0230f7235a0433",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Aosom FR",
+      "id": "5f7734c8da0230f7235a0ecc",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "TwentyDC FR",
+      "id": "60f7a4d80c775ae27b6faf46",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "La Boite Rose FR",
+      "id": "622ad26ef8bb0c5ca6f6bdc6",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Vevor FR",
+      "id": "6279ec86ed807c800348c775",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Songmics FR",
+      "id": "6447597a1746a8eb7bd772dd",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "ShowroomPrivé FR",
+      "id": "652e0fcface0a795889deb9d",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Direct Running FR",
+      "id": "652f6169f4dc1f73e22228d6",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Marc Orian FR",
+      "id": "658115ed04342a8496292289",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "BAZARCHIC FR",
+      "id": "66d29643efb4893b0f4c6fa2",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Bobshop FR",
+      "id": "683fcdb21f0b03059fec561f",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Stores-Discount FR",
+      "id": "686c9ad5e07656d425419ba5",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Bebe Boutik FR",
+      "id": "6915f429e8d5c1312f2d35dd",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Batterie-Boutique FR",
+      "id": "6ad2f81ff92d56bc95855c5a",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Maison Amour",
+      "id": "6aded51ca7d4f41774ef76b5",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Lunazone FR",
+      "id": "6ae02725c27574ced3d396d9",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Scento",
+      "id": "6ae0272cc27574ced3d396ef",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rr",
+      "name": "LiberNovo",
+      "id": "63136",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rr",
+      "name": "HiBike",
+      "id": "63152",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rr",
+      "name": "Ava & May",
+      "id": "63153",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rr",
+      "name": "Cavissima",
+      "id": "63154",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "wi",
+      "name": "Ava & May",
+      "id": "",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "wi",
+      "name": "Qonto",
+      "id": "",
+      "type": "add",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "High",
+      "id": "6936af1fa8beb28ede6e5c4e",
+      "type": "remove",
+      "date": "2026-10-27"
+    },
+    {
+      "platform": "rp",
+      "name": "Omy maison",
+      "id": "672453861966b5e36bd41b37",
+      "type": "remove",
+      "date": "2026-10-27"
+    }
+  ],
+  "total_records": 4018,
+  "counts": {
+    "rp": 1596,
+    "rr": 1091,
+    "wi": 2396,
+    "tc": 1288
+  }
+}
