@@ -89,6 +89,37 @@ try {
  }
 }catch(e){console.warn('Synchronisation CSV 27 octobre',e)}
 
+
+// Import validé 2026-10-27 : priorité aux identifiants et aux fiches existantes.
+try {
+ const flag='cashback_platform_seed_20261027_v1';
+ if(localStorage.getItem(flag)!=='1'){
+  const norm27=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  const byKey=new Map(records.map(r=>[norm27(r.name),r]));
+  const byRpId=new Map(),byRrId=new Map(),byWiUrl=new Map();
+  for(const r of records){
+   for(const i of String(r.rpId||'').split(/[;,]/).map(s=>s.trim()).filter(Boolean))byRpId.set(i,r);
+   for(const i of String(r.rrId||'').split(/[;,]/).map(s=>s.trim()).filter(Boolean))byRrId.set(i,r);
+   if(r.wiUrl)byWiUrl.set(r.wiUrl,r);
+  }
+  for(const source of SEED){
+   const rpids=String(source.rpId||'').split(/[;,]/).map(s=>s.trim()).filter(Boolean);
+   const rrids=String(source.rrId||'').split(/[;,]/).map(s=>s.trim()).filter(Boolean);
+   const target=rpids.map(i=>byRpId.get(i)).find(Boolean)||rrids.map(i=>byRrId.get(i)).find(Boolean)||byWiUrl.get(source.wiUrl)||byKey.get(norm27(source.name));
+   if(target){
+    for(const p of ['rp','rr','wi']){
+     if(source[p+'Date']==='2026-10-27'){
+      for(const field of p==='rp'?['rp','rpId','rpLogo','rpDate']:p==='rr'?['rr','rrId','rrLogo','rrUrl','rate','rrDate']:['wi','wiUrl','wiRate','wiDate','wiAliases','wiUrls'])if(source[field]!==undefined)target[field]=source[field];
+     }
+    }
+   }else if(['rp','rr','wi'].some(p=>source[p+'Date']==='2026-10-27'))records.push({...source});
+  }
+  // Retirer uniquement les quatre marchands RP confirmés, quel que soit leur état local.
+  for(const r of records)if(['highfr','omymaisonfr','thecoolrepublic','medoretcie'].includes(norm27(r.rp)||norm27(r.name)))for(const f of ['rp','rpId','rpLogo','rpDate'])r[f]='';
+  localStorage.setItem(STORAGE,JSON.stringify(records));localStorage.setItem(flag,'1');
+ }
+}catch(e){console.warn('Synchronisation CSV 27 octobre',e)}
+
 let page=0;const PAGE_SIZE=60;const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function norm(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' et ').replace(/\b(www|https|http)\b/g,' ').replace(/[^a-z0-9]+/g,' ').replace(/\b(france|francais|francaise|officiel|official|boutique|store|site)\b/g,' ').replace(/\s+/g,' ').trim()}
 function key(s){let k=norm(s).replace(/\s/g,'');return k==='monoprixcourses'?'monoprix':k}
@@ -337,6 +368,7 @@ try{localStorage.setItem(STORAGE,JSON.stringify(records))}catch(e){}
 
 const TC_CHANGES_20261027=[{"platform":"tc","name":"OUIGO","id":"","type":"add","date":"2026-10-27"},{"platform":"tc","name":"Varsity Base","id":"","type":"add","date":"2026-10-27"},{"platform":"tc","name":"Weekendesk","id":"","type":"add","date":"2026-10-27"}];
 const PLATFORM_CHANGES_20261027=[{"platform":"rp","name":"See tickets FR","id":"5f7734adda0230f72359fbe0","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Nuxe FR","id":"5f7734b9da0230f7235a0433","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Aosom FR","id":"5f7734c8da0230f7235a0ecc","type":"add","date":"2026-10-27"},{"platform":"rp","name":"TwentyDC FR","id":"60f7a4d80c775ae27b6faf46","type":"add","date":"2026-10-27"},{"platform":"rp","name":"La Boite Rose FR","id":"622ad26ef8bb0c5ca6f6bdc6","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Vevor FR","id":"6279ec86ed807c800348c775","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Songmics FR","id":"6447597a1746a8eb7bd772dd","type":"add","date":"2026-10-27"},{"platform":"rp","name":"ShowroomPrivé FR","id":"652e0fcface0a795889deb9d","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Direct Running FR","id":"652f6169f4dc1f73e22228d6","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Marc Orian FR","id":"658115ed04342a8496292289","type":"add","date":"2026-10-27"},{"platform":"rp","name":"BAZARCHIC FR","id":"66d29643efb4893b0f4c6fa2","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Bobshop FR","id":"683fcdb21f0b03059fec561f","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Stores-Discount FR","id":"686c9ad5e07656d425419ba5","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Bebe Boutik FR","id":"6915f429e8d5c1312f2d35dd","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Batterie-Boutique FR","id":"6ad2f81ff92d56bc95855c5a","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Maison Amour","id":"6aded51ca7d4f41774ef76b5","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Lunazone FR","id":"6ae02725c27574ced3d396d9","type":"add","date":"2026-10-27"},{"platform":"rp","name":"Scento","id":"6ae0272cc27574ced3d396ef","type":"add","date":"2026-10-27"},{"platform":"rr","name":"LiberNovo","id":"63136","type":"add","date":"2026-10-27"},{"platform":"rr","name":"HiBike","id":"63152","type":"add","date":"2026-10-27"},{"platform":"rr","name":"Ava & May","id":"63153","type":"add","date":"2026-10-27"},{"platform":"rr","name":"Cavissima","id":"63154","type":"add","date":"2026-10-27"},{"platform":"wi","name":"Ava & May","id":"","type":"add","date":"2026-10-27"},{"platform":"wi","name":"Qonto","id":"","type":"add","date":"2026-10-27"},{"platform":"rp","name":"High","id":"6936af1fa8beb28ede6e5c4e","type":"remove","date":"2026-10-27"},{"platform":"rp","name":"Omy maison","id":"672453861966b5e36bd41b37","type":"remove","date":"2026-10-27"}];
+const PLATFORM_CHANGES_20261027=[];
 const CHANGE_STORAGE='cashback_changes_v1';
 const CHANGE_INITIAL=[['Momox shop','','add','tc'],['Alpiniste','','add','tc'],['GlobalExam','','add','tc'],['Yves Rocher Belgique','','add','tc'],['Piècesauto.fr','35731','add'],['Jardins Anims','35903','add'],['Interiorlabels','47229','add'],['Confiserie des Arcades / Maison Thomas','54826','add'],['Richart','60324','add'],['Monkeymum','36351','remove']].map(([name,id,type,platform])=>({platform:platform||'rr',name,id,type,date:'2026-10-20'}));
 const TC_NORAUTO_20261021=[{platform:'tc',name:'Norauto',id:'',type:'add',date:'2026-10-21'}];
@@ -374,6 +406,12 @@ const CHANGES_20261024=[{"platform":"rp","name":"Médor et Cie","id":"6728feea7b
 for(const event of CHANGES_20261024)if(!changeHistory.some(c=>c.platform===event.platform&&c.id===event.id&&c.type===event.type&&c.date===event.date))changeHistory.unshift(event);
 const LIBERNOVO_EVENT={platform:'rr',name:'LiberNovo',id:'63136',type:'add',date:'2026-10-23'};
 if(!changeHistory.some(c=>c.platform==='rr'&&String(c.id)==='63136'&&c.type==='add'))changeHistory.unshift(LIBERNOVO_EVENT);
+try{localStorage.setItem(CHANGE_STORAGE,JSON.stringify(changeHistory))}catch(e){}
+for(const event of PLATFORM_CHANGES_20261027){
+ const normEvent=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+ if(!changeHistory.some(e=>e.platform===event.platform&&e.type===event.type&&(event.id&&e.id===event.id||normEvent(e.name)===normEvent(event.name))))changeHistory.unshift(event);
+}
+changeHistory.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
 try{localStorage.setItem(CHANGE_STORAGE,JSON.stringify(changeHistory))}catch(e){}
 for(const event of PLATFORM_CHANGES_20261027){
  const normEvent=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
