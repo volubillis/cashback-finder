@@ -2,7 +2,8 @@ name: Integrate approved cashback CSVs 2026-10-27
 on:
   push:
     paths:
-      - '.github/workflows/integrate-platforms-2026-10-27.yml'
+      - 'scripts/apply_platform_csv_20261027.py'
+      - 'updates/rp-2026-10-27.csv'
   workflow_dispatch:
 permissions:
   contents: write
