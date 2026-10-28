@@ -1,0 +1,58 @@
+name: Actualisation TopCashback 28 octobre 2026
+on:
+  push:
+    paths:
+      - .github/workflows/topcashback-2026-10-28.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  actualiser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Actualiser les donnees sans toucher aux fusions ni aux historiques
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("index.html")
+          html = p.read_text(encoding="utf-8")
+          start_marker = "const SEED="
+          start = html.index(start_marker) + len(start_marker)
+          end = html.index("];", start) + 1
+          merchants = json.loads(html[start:end])
+          updated = 0
+          changed = 0
+          for m in merchants:
+              if m.get("tc") and m.get("name") not in ("Savelys", "Chronopost"):
+                  m["tcDate"] = "2026-10-28"
+                  updated += 1
+              if m.get("name") == "Hotelscom" and m.get("tc"):
+                  if m.get("tcRate") != "6% Cashback":
+                      m["tcRate"] = "6% Cashback"
+                      changed += 1
+          assert updated == 1286, f"Attendu 1286, trouve {updated}"
+          assert changed == 1, f"Attendu une variation, trouve {changed}"
+          html = html[:start] + json.dumps(merchants, ensure_ascii=False, separators=(",", ":")) + html[end:]
+          marker = "const TC_RATE_CHANGES_DEFAULT="
+          begin = html.index(marker) + len(marker)
+          finish = html.index("];", begin) + 1
+          variations = [{"name":"Hotelscom","old":"10% Cashback","next":"6% Cashback"}]
+          html = html[:begin] + json.dumps(variations, ensure_ascii=False, separators=(",", ":")) + html[finish:]
+          html = html.replace("tcRateDate='27/10/2026'", "tcRateDate='28/10/2026'")
+          html = html.replace(">'2026-10-27'", ">'2026-10-28'")
+          html = html.replace("Comparaison avec le scraping du 21/10/2026", "Comparaison avec le scraping du 27/10/2026")
+          p.write_text(html, encoding="utf-8")
+          print(f"Marchands dates: {updated}; variations: {changed}")
+          PY
+      - name: Publier la version actualisee
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "TopCashback 28 octobre : taux et date, historiques conserves"
+          git push
