@@ -1,0 +1,22 @@
+name: Apply confirmed RP RR approvals 2026-10-28
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-approvals-2026-10-28.yml'
+      - 'scripts/apply_approvals_20261028.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply confirmed changes without resetting histories
+        run: python3 scripts/apply_approvals_20261028.py
+      - name: Publish if changed
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html updates/report-approvals-2026-10-28.json
+          git diff --cached --quiet || (git commit -m "Apply confirmed RP RR removals and preserve merchant aliases" && git push)
