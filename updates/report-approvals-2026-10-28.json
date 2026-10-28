@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-28",
+  "confirmed_removals": [
+    {
+      "platform": "rp",
+      "name": "Foot Center",
+      "id": [
+        "6ab3573df0035a8eba28ac78"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rp",
+      "name": "Hailo Shop",
+      "id": [
+        "6728fee97b89908996677d61"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rp",
+      "name": "Holy",
+      "id": [
+        "6a0be5bcbed619a2071cd3a1"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rp",
+      "name": "Le Robert",
+      "id": [
+        "6728feea7b89908996677db2"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rr",
+      "name": "Foot Center",
+      "id": [
+        "60226"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rr",
+      "name": "Hailo",
+      "id": [
+        "36089"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rr",
+      "name": "Holy",
+      "id": [
+        "58906"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    },
+    {
+      "platform": "rr",
+      "name": "Thecoolrepublic.Com",
+      "id": [
+        "57331"
+      ],
+      "type": "remove",
+      "date": "2026-10-28"
+    }
+  ],
+  "merged_aliases": [],
+  "record_count": 3999,
+  "preserves_history": true,
+  "monoprix_mode_requires_csv_review": true
+}
