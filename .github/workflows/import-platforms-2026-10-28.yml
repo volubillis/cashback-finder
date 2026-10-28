@@ -1,0 +1,24 @@
+name: Import full RP RR CSVs 2026-10-28
+on:
+  push:
+    paths:
+      - '.github/workflows/import-platforms-2026-10-28.yml'
+      - 'scripts/import_platforms_20261028.py'
+      - 'updates/rp-2026-10-28.csv'
+      - 'updates/rr-2026-10-28.csv'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Integrate complete 28 October RP and RR
+        run: python3 scripts/import_platforms_20261028.py
+      - name: Commit catalog
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html updates/report-import-2026-10-28.json
+          git diff --cached --quiet || (git commit -m "Import complete RP RR 28 October 2026 data" && git push)
