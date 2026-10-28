@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-28",
+  "stats": {
+    "rp": {
+      "csv_rows": 1625,
+      "unique_ids_processed": 1625,
+      "matched": 1624,
+      "unmatched_for_review": [
+        {
+          "name": "MSC Cruises FR",
+          "id": "6ae1789a190f015c24c5ad92"
+        }
+      ],
+      "skipped": 0
+    },
+    "rr": {
+      "csv_rows": 1089,
+      "unique_ids_processed": 1089,
+      "matched": 1089,
+      "unmatched_for_review": [],
+      "skipped": 0
+    }
+  },
+  "count": 4000,
+  "no_automatic_deletions": true,
+  "history_untouched": true
+}
