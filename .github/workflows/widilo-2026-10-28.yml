@@ -1,0 +1,61 @@
+name: Actualisation Widilo 28 octobre 2026
+on:
+  push:
+    paths:
+      - .github/workflows/widilo-2026-10-28.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  actualiser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Appliquer les deux taux Widilo et la date au referentiel
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          path=Path("index.html")
+          html=path.read_text(encoding="utf-8")
+          marker="const SEED="
+          start=html.index(marker)+len(marker)
+          end=html.index("];",start)+1
+          rows=json.loads(html[start:end])
+          n=0
+          for row in rows:
+              if not row.get("wi"):
+                  continue
+              n+=1
+              row["wiDate"]="2026-10-28"
+              if row.get("wi")=="Lidl":
+                  assert row.get("wiRate")=="14,29%",row
+                  row["wiRate"]="3,57%"
+              if row.get("wi")=="Santévet":
+                  assert row.get("wiRate")=="Jusqu'à 120,01€",row
+                  row["wiRate"]="Jusqu'à 150,01€"
+          assert n==2396,n
+          html=html[:start]+json.dumps(rows,ensure_ascii=False,separators=(",",":"))+html[end:]
+          # Preserve all existing local overrides, then apply the newer validated Widilo rates.
+          anchor="records=consolidateMerchants(records.filter(r=>r.rp||r.rr||r.tc||r.wi));"
+          assert html.count(anchor)==1
+          patch="""for(const r of records){if(!r.wi)continue;r.wiDate='2026-10-28';if(r.wi==='Lidl')r.wiRate='3,57%';if(r.wi==='Santévet')r.wiRate='Jusqu\'à 150,01€';}
+          """
+          # In the JavaScript patch use a double-quoted literal for the apostrophe.
+          patch="""for(const r of records){if(!r.wi)continue;r.wiDate='2026-10-28';if(r.wi==='Lidl')r.wiRate='3,57%';if(r.wi==='Santévet')r.wiRate="Jusqu'à 150,01€";}
+          """
+          html=html.replace(anchor,patch+anchor,1)
+          html=html.replace("Widilo (26/10/2026)","Widilo (28/10/2026)")
+          path.write_text(html,encoding="utf-8")
+          print("Widilo:",n,"Lidl: 3,57%; Santévet: Jusqu'a 150,01€")
+          PY
+      - name: Publier
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Widilo 28 octobre : 2 variations, historiques et fusions conserves"
+          git push
