@@ -1,0 +1,22 @@
+name: Apply confirmed TopCashback October 29 changes
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-tc-2026-10-29.yml'
+      - 'scripts/apply_tc_20261029.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update merchant catalog
+        run: python3 scripts/apply_tc_20261029.py
+      - name: Commit results
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html updates/report-tc-2026-10-29.json
+          git diff --cached --quiet || (git commit -m "Apply confirmed TopCashback 29 October changes" && git push)
