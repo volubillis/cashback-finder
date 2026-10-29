@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-29",
+  "rp_added": [
+    {
+      "platform": "rp",
+      "name": "Maison Vayrou",
+      "id": "6ae2c9adf16319fb29a385b7",
+      "type": "add",
+      "date": "2026-10-29"
+    },
+    {
+      "platform": "rp",
+      "name": "Nacon FR",
+      "id": "6ae2c9adf16319fb29a385b8",
+      "type": "add",
+      "date": "2026-10-29"
+    }
+  ],
+  "wi_rate_updated": "Lidl 4,9%",
+  "wi_empty_rates_preserved": true,
+  "rp_missing_id": "697448ca55d606cf8ebfb8f7",
+  "wi_missing": "Biocoop"
+}
