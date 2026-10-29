@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/repair-display-dates.yml'
+      - 'scripts/repair_display_dates.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -11,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Repair hardcoded date labels
+      - name: Render dates from per-platform CSV records
         run: python3 scripts/repair_display_dates.py
       - name: Commit fix
         run: |
           git config user.name "cashback-update-bot"
           git config user.email "cashback-update-bot@users.noreply.github.com"
           git add index.html
-          git diff --cached --quiet || (git commit -m "Correct RP RR date labels on merchant cards" && git push)
+          git diff --cached --quiet || (git commit -m "Render platform dates dynamically" && git push)
