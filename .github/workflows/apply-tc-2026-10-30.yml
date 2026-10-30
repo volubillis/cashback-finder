@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'scripts/apply_tc_20261030.py'
+      - 'updates/tc-2026-10-30.csv'
       - '.github/workflows/apply-tc-2026-10-30.yml'
   workflow_dispatch:
 permissions:
