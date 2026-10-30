@@ -1,0 +1,22 @@
+name: Apply TopCashback 30 October CSV
+on:
+  push:
+    paths:
+      - 'scripts/apply_tc_20261030.py'
+      - '.github/workflows/apply-tc-2026-10-30.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update existing index without removing unconfirmed merchants
+        run: python3 scripts/apply_tc_20261030.py
+      - name: Commit updated website
+        run: |
+          git config user.name "cashback-update-bot"
+          git config user.email "cashback-update-bot@users.noreply.github.com"
+          git add index.html updates/report-tc-2026-10-30.json
+          git diff --cached --quiet || (git commit -m "Apply TopCashback 30 October 2026" && git push)
