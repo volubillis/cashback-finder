@@ -1,24 +1,16 @@
 {
   "date": "2026-10-30",
-  "source_rows": 1285,
-  "updated": 1285,
-  "new": [
-    "Handball Store"
-  ],
+  "source_rows": 1286,
+  "updated": 1286,
+  "new": [],
   "rate_changes": [
     {
       "name": "Love and Vibes",
-      "old": "6% Cashback",
-      "new": "6% Cashback\"https://www.topcashback.fr/lovehoney/"
-    },
-    {
-      "name": "Qatar airways",
-      "old": "2% Cashback",
-      "new": "4% Cashback"
+      "old": "6% Cashback\"https://www.topcashback.fr/lovehoney/",
+      "new": "6% Cashback"
     }
   ],
   "unconfirmed_absences": [
-    "Lovehoney",
     "Ski-planet"
   ],
   "ambiguous": [],
