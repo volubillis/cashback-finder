@@ -7,7 +7,7 @@ from urllib.parse import urlparse, parse_qs
 root=Path(__file__).resolve().parent.parent
 site=root/"index.html"
 html=site.read_text(encoding="utf-8")
-m=re.search(r"const SEED=(\\[.*?\\]);const ",html,re.S)
+m=re.search(r"const SEED=(\[.*?\]);const ",html,re.S)
 if not m: raise SystemExit("SEED introuvable")
 records=json.loads(m.group(1))
 updates=json.loads((root/"data/maj-2026-11-02.json").read_text(encoding="utf-8"))["updates"]
