@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'catalogue.js'
+      - 'scripts/embed_catalogue.py'
       - '.github/workflows/topcashback.yml'
 
   schedule:
@@ -84,6 +86,7 @@ jobs:
           python -m json.tool topcashback-alerts.json > /dev/null
           python -m json.tool topcashback-rates.json > /dev/null
           test -f index.html
+          python scripts/embed_catalogue.py --check
 
       - name: Configurer GitHub Pages
         uses: actions/configure-pages@v5

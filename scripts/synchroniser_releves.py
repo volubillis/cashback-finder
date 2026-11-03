@@ -7,6 +7,8 @@ from urllib.parse import urlparse, parse_qs
 root=Path(__file__).resolve().parent.parent
 site=root/"index.html"
 html=site.read_text(encoding="utf-8")
+if 'const PUBLISHED_DATES=' in html:
+ raise SystemExit('Ce catalogue utilise les relevés datés. Employer import_verified_snapshots.py ; la synchronisation historique du 2 novembre est désactivée pour éviter un retour aux anciennes données.')
 m=re.search(r"const SEED=(\[.*?\]);const ",html,re.S)
 if not m: raise SystemExit("SEED introuvable")
 records=json.loads(m.group(1))
