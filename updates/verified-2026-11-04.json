@@ -1,0 +1,449 @@
+{
+  "date": "2026-11-04",
+  "platforms": {
+    "rp": {
+      "source_file": "rp-csv-A-VERIFIER(20261104-084733).csv",
+      "sha256": "3457d0fefc5bbfa581442844eca8eb02d44e98bc91b1b6b64d38038f6706494e",
+      "input_rows": 1577,
+      "unique_rows": 1577,
+      "added": [
+        {
+          "name": "Pascal Coste Shopping",
+          "platform_name": "Pascal Coste Shopping",
+          "url": "",
+          "id": "6aeab2a1977c12112005c8a9"
+        }
+      ],
+      "changed": [],
+      "unchanged": 1576,
+      "missing": [
+        {
+          "name": "4 Pieds Acquisition",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "4 Pieds Conversion",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "ABC Meubles -",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Belle au naturel",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Biotyfull",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Brittany Ferries",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Cafeyn",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Capital Koala",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Climsom",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Cotton & Co",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Coverd",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Europann",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Flytel",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Footjoy",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Glossybox",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Happ-e",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "HelloSafe",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "iHoverboard",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Jumbo Car Guyane",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Kadolis",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "La Box Bijoux BB",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "La Croix",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "La Maison du Chausseur",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "La Sélectionniste",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lcl",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Le Chat Lingerie",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "LiquidBox",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Livea Cashback",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Livea Display & Content",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lotto Social",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Lucette Paris",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lyca Mobile",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Mademoiselle-bio",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Mon Kiosque by Condé Nast",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Moyu",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Mutuelle GSMC",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Nateo Concept",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Netski",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Onliz",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Panafrica",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "PartyLite",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Patolo",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Prismashop",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Snowrental",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "SnowTrex",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "So-Inside",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Terres de",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Toutabo",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Toxik3 Paris",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Tradition des Vosges",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Tricots Marcel",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Ulygo",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Un Lit au Pre",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Vawanda",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Vous pouvez dormir dans la grange",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Wiber",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Youprice",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "MSC Cruises FR",
+          "url": "",
+          "last_observed": "2026-11-02"
+        }
+      ]
+    },
+    "rr": {
+      "source_file": "rr-csv-A-VERIFIER(20261104-084733).csv",
+      "sha256": "089a3c1596bd47988229a2b6b2cf29e2075f3ce536ed37a51b629d0b30b7a7fa",
+      "input_rows": 1088,
+      "unique_rows": 1088,
+      "added": [],
+      "changed": [
+        {
+          "name": "Aliexpress",
+          "old": "24% remboursés",
+          "next": "19% remboursés"
+        }
+      ],
+      "unchanged": 1087,
+      "missing": [
+        {
+          "name": "Horizn Studios",
+          "url": "https://www.remisesetreductions.fr/Merchant/31128",
+          "last_observed": "2026-10-28"
+        },
+        {
+          "name": "iHoverboard",
+          "url": "https://www.remisesetreductions.fr/Merchant/54761",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lauvée",
+          "url": "https://www.remisesetreductions.fr/Merchant/60016",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Maxigastro",
+          "url": "https://www.remisesetreductions.fr/Merchant/59283",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Moyu",
+          "url": "https://www.remisesetreductions.fr/Merchant/47564",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Topchaleur",
+          "url": "https://www.remisesetreductions.fr/Merchant/38449",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Monoprix Mode",
+          "url": "",
+          "last_observed": "2026-11-02"
+        }
+      ]
+    },
+    "tc": {
+      "source_file": "tc-csv-A-VERIFIER(7).csv",
+      "sha256": "8bcce2a213444ff7eb462a97894ec34e887398102ad1fe6ac023fdf13dbcd65b",
+      "input_rows": 1285,
+      "unique_rows": 1285,
+      "added": [],
+      "changed": [
+        {
+          "name": "Aliexpress",
+          "old": "24% Cashback",
+          "next": "19% Cashback"
+        },
+        {
+          "name": "Cdiscount",
+          "old": "5% Cashback",
+          "next": "3,5% Cashback"
+        },
+        {
+          "name": "Merit Beauty",
+          "old": "5% Cashback",
+          "next": "15% Cashback"
+        }
+      ],
+      "unchanged": 1282,
+      "missing": [
+        {
+          "name": "Horizn Studios",
+          "url": "https://www.topcashback.fr/horizn-studios/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Monkeymum",
+          "url": "https://www.topcashback.fr/monkey-mum/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Ski-planet",
+          "url": "https://www.topcashback.fr/ski-planet/",
+          "last_observed": "2026-10-28"
+        },
+        {
+          "name": "Mondly",
+          "url": "https://www.topcashback.fr/mondly/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Savage x Fenty",
+          "url": "https://www.topcashback.fr/savage-x-fenty/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "AW Bridal",
+          "url": "https://www.topcashback.fr/aw-bridal/",
+          "last_observed": "2026-11-02"
+        }
+      ]
+    },
+    "wi": {
+      "source_file": "wi-csv-A-VERIFIER(10).csv",
+      "sha256": "abc53072b4851111ba18d888121280e9c45da78e473d7f0b54911246f86b6d0f",
+      "input_rows": 2399,
+      "unique_rows": 2399,
+      "added": [],
+      "changed": [
+        {
+          "name": "Aliexpress",
+          "old": "Jusqu'à 22%",
+          "next": "Jusqu'à 20,21%"
+        },
+        {
+          "name": "ID Market",
+          "old": "",
+          "next": "Jusqu'à 6,43%"
+        }
+      ],
+      "unchanged": 2397,
+      "missing": [
+        {
+          "name": "Gardena",
+          "url": "https://www.widilo.fr/code-promo/gardena",
+          "last_observed": "2026-11-02"
+        }
+      ]
+    }
+  }
+}
