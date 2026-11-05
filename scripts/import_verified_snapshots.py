@@ -95,7 +95,7 @@ def read_snapshot(path,p,observed):
     if len(rows)<1000:raise ValueError(f'{p}: unexpectedly short snapshot: {len(rows)}')
     return rows,{'source_file':path.name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'input_rows':len(raw),'unique_rows':len(rows)}
 
-def apply(rows,sources,p,observed,aliases):
+def apply(rows,sources,p,observed,aliases,complete=True):
     def canon(name):return aliases.get(key(name),key(name))
     def names(r):return {canon(n) for n in [r.get('name'),*r.get('mergedNames',[]),*[r.get(platform) for platform in PLATFORMS],*r.get('wiAliases',[]),*r.get('rrAliases',[]),*r.get('tcAliases',[])] if n}
     result={'added':[],'changed':[],'unchanged':0,'missing':[]};matched=set()
@@ -145,7 +145,7 @@ def apply(rows,sources,p,observed,aliases):
         index_row(target)
         target.pop(p+'MissingSince',None)
     for target in rows:
-        if target.get(p) and id(target) not in matched:
+        if complete and target.get(p) and id(target) not in matched:
             target[p+'MissingSince']=observed
             result['missing'].append({'name':target['name'],'url':target.get(p+'Url',''),'last_observed':target.get(p+'Date','')})
     return result
@@ -153,6 +153,7 @@ def apply(rows,sources,p,observed,aliases):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--date',required=True)
+    parser.add_argument('--partial',action='append',choices=PLATFORMS,default=[],help='Do not infer absences for this partial platform snapshot')
     for p in PLATFORMS:parser.add_argument('--'+p,type=Path)
     args=parser.parse_args();observed=date.fromisoformat(args.date).isoformat()
     # Use explicit supplied observation dates, never the execution host's date.
@@ -170,8 +171,8 @@ def main():
             values,metadata=read_snapshot(source,p,observed);snapshots[p]=values
             if published.get(p)==observed and report['platforms'].get(p,{}).get('sha256')==metadata['sha256']:
                 continue
-            result=apply(rows,values,p,observed,aliases)
-            report['platforms'][p]={**metadata,**result};published[p]=observed
+            result=apply(rows,values,p,observed,aliases,complete=p not in args.partial)
+            report['platforms'][p]={**metadata,'complete':p not in args.partial,**result};published[p]=observed
             events=[e for e in events if not(e.get('platform')==p and e.get('date')==observed)]
             events.extend({'platform':p,'name':e['name'],'id':e.get('id',''),'url':e.get('url',''),'type':'add','date':observed} for e in result['added'])
             if p=='tc':latest={'date':observed,'changes':result['changed']}
@@ -186,6 +187,7 @@ def main():
     target=ROOT/'data'/f'releves-{observed}.json'
     stored=json.loads(target.read_text(encoding='utf-8')) if target.exists() else {'date':observed,'platforms':{}}
     stored['platforms'].update(snapshots)
+    stored.setdefault('coverage',{}).update({p:'partial' if p in args.partial else 'complete' for p in snapshots})
     path.write_text(html,encoding='utf-8');report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');target.write_text(encode(stored)+'\n',encoding='utf-8')
     for p,r in report['platforms'].items():print(p,':',r['unique_rows'],'lignes,',len(r['changed']),'variations,',len(r['added']),'ajouts,',len(r['missing']),'absences conservées')
 
