@@ -342,7 +342,26 @@ function canonicalChangeName(c){
  const known={'rr:35903':'Jardins Animes','rr:47229':'Interiorlabels.fr','rr:54826':'Confiserie des Arcades - Maison THOMAS FR','rr:35731':'Piècesauto.fr','rr:60324':'Richart'};
  return known[c.platform+':'+c.id]||c.name;
 }
-function renderChanges(){for(const p of ['rp','rr','tc','wi']){let ul=$('changes-'+p);ul.replaceChildren();let list=changeHistory.filter(c=>c.platform===p).slice(0,10);if(!list.length){let li=document.createElement('li');li.textContent='Aucun changement enregistré.';ul.append(li)}for(const c of list){let li=document.createElement('li'),b=document.createElement('strong'),date=document.createElement('span');b.style.color=c.type==='add'?'#167347':'#ba3340';b.textContent=c.type==='add'?'+ Ajout : ':'− Retrait : ';date.className='change-date';date.textContent=c.date+(c.id?' · ID '+c.id:'');li.append(b,document.createTextNode(canonicalChangeName(c)),date);ul.append(li)}}}
+function renderChanges(){
+ for(const p of ['rp','rr','tc','wi']){
+  const ul=$('changes-'+p);ul.replaceChildren();
+  const list=changeHistory.filter(c=>c.platform===p).slice(0,10);
+  if(!list.length){const li=document.createElement('li');li.textContent='Aucun changement enregistré.';ul.append(li)}
+  for(const c of list){
+   const li=document.createElement('li'),b=document.createElement('strong'),date=document.createElement('span'),lucky=document.createElement('a');
+   const name=canonicalChangeName(c);
+   b.style.color=c.type==='add'?'#167347':'#ba3340';
+   b.textContent=c.type==='add'?'+ Ajout : ':'− Retrait : ';
+   date.className='change-date';date.textContent=c.date+(c.id?' · ID '+c.id:'');
+   lucky.className='small';lucky.textContent='Feel lucky ↗';
+   lucky.href='https://www.google.com/search?btnI=1&q='+encodeURIComponent(name+' site officiel');
+   lucky.target='_blank';lucky.rel='noopener noreferrer';
+   lucky.title='Google : J’ai de la chance — '+name;
+   lucky.setAttribute('aria-label','Feel lucky : trouver le site officiel de '+name+' via Google');
+   li.append(b,document.createTextNode(name+' · '),lucky,date);ul.append(li);
+  }
+ }
+}
 const TC_RATE_CHANGES_STORAGE='cashback_tc_rate_changes_latest_v1';
 const TC_RATE_CHANGES_DEFAULT=[{"name":"Hotelscom","old":"10% Cashback","next":"6% Cashback"}];
 let tcRateChanges=TC_LATEST.changes.slice(),tcRateDate=TC_LATEST.date.split('-').reverse().join('/');
