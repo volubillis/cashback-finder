@@ -1,0 +1,916 @@
+{
+  "date": "2026-11-07",
+  "platforms": {
+    "rp": {
+      "source_file": "rp-csv-A-VERIFIER.csv",
+      "sha256": "ddc684ebb0c2c7feb19628dde4d7e502761708d72b8105a922cfbb7cf5a79724",
+      "input_rows": 1578,
+      "unique_rows": 1578,
+      "complete": true,
+      "added": [
+        {
+          "name": "Le Site de la Pièce",
+          "platform_name": "Le Site de la Pièce",
+          "url": "",
+          "id": "63dcc85b28394e1ae8325976"
+        },
+        {
+          "name": "Wanimo",
+          "platform_name": "Wanimo",
+          "url": "",
+          "id": "63dcc96828394e1ae8325977"
+        },
+        {
+          "name": "ShowroomPrivé FR",
+          "platform_name": "ShowroomPrivé FR",
+          "url": "",
+          "id": "652e0fcface0a795889deb9d"
+        },
+        {
+          "name": "Direct Running FR",
+          "platform_name": "Direct Running FR",
+          "url": "",
+          "id": "652f6169f4dc1f73e22228d6"
+        },
+        {
+          "name": "Nuxe",
+          "platform_name": "Nuxe",
+          "url": "",
+          "id": "66d2962cefb4893b0f4c6e8c"
+        },
+        {
+          "name": "Caroll",
+          "platform_name": "Caroll",
+          "url": "",
+          "id": "66d2962cefb4893b0f4c6e97"
+        },
+        {
+          "name": "BAZARCHIC FR",
+          "platform_name": "BAZARCHIC FR",
+          "url": "",
+          "id": "66d29643efb4893b0f4c6fa2"
+        },
+        {
+          "name": "Dyson FR",
+          "platform_name": "Dyson FR",
+          "url": "",
+          "id": "66d2964cefb4893b0f4c755f"
+        },
+        {
+          "name": "Cristal Forest",
+          "platform_name": "Cristal Forest",
+          "url": "",
+          "id": "66fb74c45ba0a7f32cc245d1"
+        },
+        {
+          "name": "Morgan",
+          "platform_name": "Morgan",
+          "url": "",
+          "id": "67931f8b8c0ab780978910b2"
+        },
+        {
+          "name": "La Boîte rose",
+          "platform_name": "La Boîte rose",
+          "url": "",
+          "id": "67931f8d8c0ab78097891100"
+        },
+        {
+          "name": "Zumub",
+          "platform_name": "Zumub",
+          "url": "",
+          "id": "67931f8e8c0ab78097891110"
+        },
+        {
+          "name": "Le Site de La Pièce",
+          "platform_name": "Le Site de La Pièce",
+          "url": "",
+          "id": "67931f938c0ab780978911ab"
+        },
+        {
+          "name": "Laudate",
+          "platform_name": "Laudate",
+          "url": "",
+          "id": "67931f938c0ab780978911b4"
+        },
+        {
+          "name": "Eminence",
+          "platform_name": "Eminence",
+          "url": "",
+          "id": "67931f968c0ab78097891202"
+        },
+        {
+          "name": "Gabiona FR",
+          "platform_name": "Gabiona FR",
+          "url": "",
+          "id": "67c28896b6a96e932a8bd754"
+        },
+        {
+          "name": "SeeTickets",
+          "platform_name": "SeeTickets",
+          "url": "",
+          "id": "67ecb88d2dc58148578d61e5"
+        },
+        {
+          "name": "autodistribution.fr",
+          "platform_name": "autodistribution.fr",
+          "url": "",
+          "id": "682bff5c1927a9fabd374f82"
+        },
+        {
+          "name": "Bobshop FR",
+          "platform_name": "Bobshop FR",
+          "url": "",
+          "id": "683fcdb21f0b03059fec561f"
+        },
+        {
+          "name": "Café Coton FR",
+          "platform_name": "Café Coton FR",
+          "url": "",
+          "id": "6868a5d7b094f2a20aadaf5a"
+        },
+        {
+          "name": "Stores-Discount FR",
+          "platform_name": "Stores-Discount FR",
+          "url": "",
+          "id": "686c9ad5e07656d425419ba5"
+        },
+        {
+          "name": "dietbon",
+          "platform_name": "dietbon",
+          "url": "",
+          "id": "687876246c76210a281cc0ce"
+        },
+        {
+          "name": "BodyCross",
+          "platform_name": "BodyCross",
+          "url": "",
+          "id": "68805fb3a95e875c53af212e"
+        },
+        {
+          "name": "Vevor FR",
+          "platform_name": "Vevor FR",
+          "url": "",
+          "id": "6881b1519eb33f67d0c96076"
+        },
+        {
+          "name": "Benetton FR",
+          "platform_name": "Benetton FR",
+          "url": "",
+          "id": "68e88a515fd3dac38c8f5d6f"
+        },
+        {
+          "name": "fackelmann",
+          "platform_name": "fackelmann",
+          "url": "",
+          "id": "691e975e782713040cfa827b"
+        },
+        {
+          "name": "Marc Orian",
+          "platform_name": "Marc Orian",
+          "url": "",
+          "id": "6938f5b1e26bff24eea39918"
+        },
+        {
+          "name": "Oscaro",
+          "platform_name": "Oscaro",
+          "url": "",
+          "id": "694f5edaa651d8a9a7c39195"
+        },
+        {
+          "name": "EAFIT",
+          "platform_name": "EAFIT",
+          "url": "",
+          "id": "69535354d53997ae3998b7ff"
+        },
+        {
+          "name": "granions",
+          "platform_name": "granions",
+          "url": "",
+          "id": "69535354d53997ae3998b800"
+        },
+        {
+          "name": "Bebeboutik",
+          "platform_name": "Bebeboutik",
+          "url": "",
+          "id": "6960e24557b0546a8cc0be1a"
+        },
+        {
+          "name": "Bugaboo FR",
+          "platform_name": "Bugaboo FR",
+          "url": "",
+          "id": "6960fef1dde8752cf0179361"
+        },
+        {
+          "name": "Vogel's FR",
+          "platform_name": "Vogel's FR",
+          "url": "",
+          "id": "69686b47d2aaa9a73c35fb52"
+        },
+        {
+          "name": "Aosom",
+          "platform_name": "Aosom",
+          "url": "",
+          "id": "697448ca55d606cf8ebfb8e3"
+        },
+        {
+          "name": "Desigual.com",
+          "platform_name": "Desigual.com",
+          "url": "",
+          "id": "697448ca55d606cf8ebfb8ec"
+        },
+        {
+          "name": "Vevor",
+          "platform_name": "Vevor",
+          "url": "",
+          "id": "69783d4cb77ac6ae01397d03"
+        },
+        {
+          "name": "Songmics",
+          "platform_name": "Songmics",
+          "url": "",
+          "id": "697d83519a04dd62b18ab1c2"
+        },
+        {
+          "name": "Navimow FR",
+          "platform_name": "Navimow FR",
+          "url": "",
+          "id": "69841b65b62176ae0c410696"
+        },
+        {
+          "name": "Twenty DC",
+          "platform_name": "Twenty DC",
+          "url": "",
+          "id": "69968fa6ddc6d2abfdaa4fce"
+        },
+        {
+          "name": "Armani Beauty FR",
+          "platform_name": "Armani Beauty FR",
+          "url": "",
+          "id": "69bb799b8ca8614e54505619"
+        },
+        {
+          "name": "Bodycross (FR)",
+          "platform_name": "Bodycross (FR)",
+          "url": "",
+          "id": "69f970bdf5e8709e88e31917"
+        },
+        {
+          "name": "punch power",
+          "platform_name": "punch power",
+          "url": "",
+          "id": "6a3220ad3d597fad714b538e"
+        },
+        {
+          "name": "Ulla Popken FR",
+          "platform_name": "Ulla Popken FR",
+          "url": "",
+          "id": "6a428a2cbfd22b75f24d6512"
+        },
+        {
+          "name": "Saily FR",
+          "platform_name": "Saily FR",
+          "url": "",
+          "id": "6a7169352435287b9a6daa58"
+        },
+        {
+          "name": "Grube FR",
+          "platform_name": "Grube FR",
+          "url": "",
+          "id": "6a9a47cbb6906c045988e5db"
+        },
+        {
+          "name": "Conrad FR",
+          "platform_name": "Conrad FR",
+          "url": "",
+          "id": "6a9a47cfb6906c045988e5df"
+        },
+        {
+          "name": "Lord Of CBD",
+          "platform_name": "Lord Of CBD",
+          "url": "",
+          "id": "6ac082aae9fc8df9a7f13cad"
+        },
+        {
+          "name": "goodbro",
+          "platform_name": "goodbro",
+          "url": "",
+          "id": "6ac9bd380638ea4c10ac7389"
+        },
+        {
+          "name": "Batterie-Boutique FR",
+          "platform_name": "Batterie-Boutique FR",
+          "url": "",
+          "id": "6ad2f81ff92d56bc95855c5a"
+        },
+        {
+          "name": "Lytess FR",
+          "platform_name": "Lytess FR",
+          "url": "",
+          "id": "6ae2ca31f16319fb29a385c6"
+        },
+        {
+          "name": "Outletcity EU",
+          "platform_name": "Outletcity EU",
+          "url": "",
+          "id": "6aeea7b2bc73f555cd1f95bf"
+        },
+        {
+          "name": "Ecovacs FR",
+          "platform_name": "Ecovacs FR",
+          "url": "",
+          "id": "6aeea7b8bc73f555cd1f95f4"
+        },
+        {
+          "name": "Mibro FR",
+          "platform_name": "Mibro FR",
+          "url": "",
+          "id": "6aeea7b8bc73f555cd1f9608"
+        }
+      ],
+      "changed": [],
+      "unchanged": 1525,
+      "missing": [
+        {
+          "name": "4 Pieds Acquisition",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "4 Pieds Conversion",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "ABC Meubles -",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Belle au naturel",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Biotyfull",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Brittany Ferries",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Cafeyn",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Capital Koala",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Climsom",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Cotton & Co",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Coverd",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Europann",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Flytel",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Footjoy",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Glossybox",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Happ-e",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "HelloSafe",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "iHoverboard",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Jumbo Car Guyane",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Kadolis",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "La Box Bijoux BB",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "La Croix",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "La Maison du Chausseur",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "La Sélectionniste",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lcl",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Le Chat Lingerie",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "LiquidBox",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Livea Cashback",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Livea Display & Content",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lotto Social",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Lucette Paris",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Lyca Mobile",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Mademoiselle-bio",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "markineo.com (FR)",
+          "url": "",
+          "last_observed": "2026-11-06"
+        },
+        {
+          "name": "Mon Kiosque by Condé Nast",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Moyu",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Mutuelle GSMC",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Nateo Concept",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Netski",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Onliz",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Panafrica",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "PartyLite",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Patolo",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Prismashop",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Snowrental",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "SnowTrex",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "So-Inside",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Terres de",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Toutabo",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Toxik3 Paris",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Tradition des Vosges",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Tricots Marcel",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Ulygo",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Un Lit au Pre",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Vawanda",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Vous pouvez dormir dans la grange",
+          "url": "",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Wiber",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Youprice",
+          "url": "",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "MSC Cruises FR",
+          "url": "",
+          "last_observed": "2026-11-02"
+        }
+      ]
+    },
+    "rr": {
+      "source_file": "rr-csv-A-VERIFIER.csv",
+      "sha256": "e743d792545c93b4c07ea8d5004ef9de5d7ab9b03ae9d3a3502cd11e719f29a6",
+      "input_rows": 1085,
+      "unique_rows": 1085,
+      "complete": true,
+      "added": [
+        {
+          "name": "Dowinx",
+          "platform_name": "Dowinx",
+          "url": "https://www.remisesetreductions.fr/Merchant/60320",
+          "id": "60320"
+        },
+        {
+          "name": "Pro Breeze",
+          "platform_name": "Pro Breeze",
+          "url": "https://www.remisesetreductions.fr/Merchant/60326",
+          "id": "60326"
+        }
+      ],
+      "changed": [
+        {
+          "name": "Monoprix Mode",
+          "old": "Ancien taux invalide",
+          "next": "15% remboursés"
+        }
+      ],
+      "unchanged": 1082,
+      "missing": [
+        {
+          "name": "Horizn Studios",
+          "url": "https://www.remisesetreductions.fr/Merchant/31128",
+          "last_observed": "2026-10-28"
+        },
+        {
+          "name": "iHoverboard",
+          "url": "https://www.remisesetreductions.fr/Merchant/54761",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Laurence Boutique",
+          "url": "https://www.remisesetreductions.fr/Merchant/60000",
+          "last_observed": "2026-11-04"
+        },
+        {
+          "name": "Lauvée",
+          "url": "https://www.remisesetreductions.fr/Merchant/60016",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Maxigastro",
+          "url": "https://www.remisesetreductions.fr/Merchant/59283",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Moyu",
+          "url": "https://www.remisesetreductions.fr/Merchant/47564",
+          "last_observed": "2026-10-29"
+        },
+        {
+          "name": "Padelnuestro",
+          "url": "https://www.remisesetreductions.fr/Merchant/26524",
+          "last_observed": "2026-11-04"
+        },
+        {
+          "name": "Topchaleur",
+          "url": "https://www.remisesetreductions.fr/Merchant/38449",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Zeina",
+          "url": "https://www.remisesetreductions.fr/Merchant/56868",
+          "last_observed": "2026-11-06"
+        }
+      ]
+    },
+    "tc": {
+      "source_file": "tc-csv-A-VERIFIER.csv",
+      "sha256": "7fddcc8dd96ade2ec8359936c0aae8eda218dc478f820b9fffc7b93d1ed3171a",
+      "input_rows": 1314,
+      "unique_rows": 1314,
+      "complete": true,
+      "added": [
+        {
+          "name": "Clothing Management Consultants",
+          "platform_name": "Clothing Management Consultants",
+          "url": "https://www.topcashback.fr/clothing-management-consultants/",
+          "id": ""
+        },
+        {
+          "name": "Conrad",
+          "platform_name": "Conrad",
+          "url": "https://www.topcashback.fr/conrad/",
+          "id": ""
+        },
+        {
+          "name": "eBay Live",
+          "platform_name": "eBay Live",
+          "url": "https://www.topcashback.fr/ebay-live/",
+          "id": ""
+        },
+        {
+          "name": "Epeda",
+          "platform_name": "Epeda",
+          "url": "https://www.topcashback.fr/epeda/",
+          "id": ""
+        },
+        {
+          "name": "HOM",
+          "platform_name": "HOM",
+          "url": "https://www.topcashback.fr/hom/",
+          "id": ""
+        },
+        {
+          "name": "Leonardo Hotels",
+          "platform_name": "Leonardo Hotels",
+          "url": "https://www.topcashback.fr/leonardo-hotels/",
+          "id": ""
+        },
+        {
+          "name": "PrintAbout",
+          "platform_name": "PrintAbout",
+          "url": "https://www.topcashback.fr/printabout/",
+          "id": ""
+        },
+        {
+          "name": "Space NK Belgique",
+          "platform_name": "Space NK Belgique",
+          "url": "https://www.topcashback.fr/space-nk-belgique/",
+          "id": ""
+        },
+        {
+          "name": "WeightWorld",
+          "platform_name": "WeightWorld",
+          "url": "https://www.topcashback.fr/weightworld/",
+          "id": ""
+        }
+      ],
+      "changed": [
+        {
+          "name": "Temu",
+          "old": "Jusqu'à 40% Cashback",
+          "next": "Jusqu'à 55% Cashback"
+        }
+      ],
+      "unchanged": 1304,
+      "missing": [
+        {
+          "name": "Horizn Studios",
+          "url": "https://www.topcashback.fr/horizn-studios/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Monkeymum",
+          "url": "https://www.topcashback.fr/monkey-mum/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Puzzle",
+          "url": "https://www.topcashback.fr/puzzle/",
+          "last_observed": "2026-11-04"
+        },
+        {
+          "name": "Tefal",
+          "url": "https://www.topcashback.fr/tefal/",
+          "last_observed": "2026-11-04"
+        },
+        {
+          "name": "Ski-planet",
+          "url": "https://www.topcashback.fr/ski-planet/",
+          "last_observed": "2026-10-28"
+        },
+        {
+          "name": "Mondly",
+          "url": "https://www.topcashback.fr/mondly/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "Savage x Fenty",
+          "url": "https://www.topcashback.fr/savage-x-fenty/",
+          "last_observed": "2026-11-02"
+        },
+        {
+          "name": "AW Bridal",
+          "url": "https://www.topcashback.fr/aw-bridal/",
+          "last_observed": "2026-11-02"
+        }
+      ]
+    },
+    "wi": {
+      "source_file": "wi-csv-A-VERIFIER.csv",
+      "sha256": "4b8c02cbe63afe827c44949e3fa50efe273aac4f84be9129d2950811dff3c5bf",
+      "input_rows": 2404,
+      "unique_rows": 2404,
+      "complete": false,
+      "added": [
+        {
+          "name": "Awol",
+          "platform_name": "Awol",
+          "url": "https://www.widilo.fr/code-promo/awol",
+          "id": ""
+        },
+        {
+          "name": "Grammarly",
+          "platform_name": "Grammarly",
+          "url": "https://www.widilo.fr/code-promo/grammarly",
+          "id": ""
+        },
+        {
+          "name": "XGIMI",
+          "platform_name": "XGIMI",
+          "url": "https://www.widilo.fr/code-promo/xgimi",
+          "id": ""
+        }
+      ],
+      "changed": [
+        {
+          "name": "Aliexpress",
+          "old": "Jusqu'à 12%",
+          "next": "Jusqu'à 13%"
+        },
+        {
+          "name": "Auchan Telecom",
+          "old": "Jusqu'à 9€",
+          "next": "Jusqu'à 15€"
+        },
+        {
+          "name": "Cdiscount",
+          "old": "Jusqu'à 3%",
+          "next": "Jusqu'à 3,5%"
+        },
+        {
+          "name": "Emma",
+          "old": "Jusqu'à 8,75%",
+          "next": "Jusqu'à 18%"
+        },
+        {
+          "name": "Farnell",
+          "old": "",
+          "next": "Jusqu'à 4,95%"
+        },
+        {
+          "name": "Fortuneo",
+          "old": "Jusqu'à 120,01€",
+          "next": "Jusqu'à 150,01€"
+        },
+        {
+          "name": "ID Market",
+          "old": "Jusqu'à 10%",
+          "next": "Jusqu'à 12%"
+        },
+        {
+          "name": "Levis",
+          "old": "Jusqu'à 7%",
+          "next": "Jusqu'à 5,4%"
+        },
+        {
+          "name": "Lidl -",
+          "old": "Jusqu'à 5,6%",
+          "next": "Jusqu'à 7%"
+        },
+        {
+          "name": "Qonto",
+          "old": "Jusqu'à 100€",
+          "next": "Jusqu'à 90€"
+        },
+        {
+          "name": "Samsung",
+          "old": "Jusqu'à 3%",
+          "next": "Jusqu'à 13,5%"
+        },
+        {
+          "name": "Santévet",
+          "old": "Jusqu'à 120,01€",
+          "next": "Jusqu'à 150,01€"
+        },
+        {
+          "name": "Zadig&Voltaire",
+          "old": "Jusqu'à 10%",
+          "next": "Jusqu'à 12%"
+        }
+      ],
+      "unchanged": 2388,
+      "missing": []
+    }
+  }
+}
